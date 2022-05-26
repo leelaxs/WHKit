@@ -8,19 +8,24 @@
 
 static inline UIWindow* wh_currentWindow() {
     UIWindow* window = nil;
-    if (@available(iOS 13.0, *)) {
-        for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
-            if (windowScene.activationState == UISceneActivationStateForegroundActive ||
-                windowScene.activationState == UISceneActivationStateUnattached) {
-                window = windowScene.windows.firstObject;
-                break;
+    if ([UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)]) {
+        window = UIApplication.sharedApplication.delegate.window;
+    }
+    if (!window) {
+        if (@available(iOS 13.0, *)) {
+            for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
+                if (windowScene.activationState == UISceneActivationStateForegroundActive ||
+                    windowScene.activationState == UISceneActivationStateUnattached) {
+                    window = windowScene.windows.firstObject;
+                    break;
+                }
             }
-        }
-    } else {
+        } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        window = [UIApplication sharedApplication].keyWindow;
+            window = [UIApplication sharedApplication].keyWindow;
 #pragma clang diagnostic pop
+        }
     }
     return window;
 }
@@ -31,9 +36,7 @@ static inline BOOL isIphoneX() {
         return result;
     }
     if (@available(iOS 11.0, *)) {
-        if (wh_currentWindow().safeAreaInsets.bottom > 0.0) {
-            result = YES;
-        }
+        if (wh_currentWindow().safeAreaInsets.bottom > 0.0) result = YES;
     }
     return result;
 }
