@@ -10,7 +10,8 @@ static inline UIWindow* wh_currentWindow() {
     UIWindow* window = nil;
     if (@available(iOS 13.0, *)) {
         for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
-            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive ||
+                windowScene.activationState == UISceneActivationStateUnattached) {
                 window = windowScene.windows.firstObject;
                 break;
             }
