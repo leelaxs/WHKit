@@ -15,6 +15,7 @@
                                           imageName:(NSString *_Nullable)imageName
                                              target:(nullable id)target
                                              action:(nonnull SEL)action
+                                            btnSize:(CGSize)btnSize
                                            fontSize:(CGFloat)fontSize
                                    titleNormalColor:(UIColor *_Nullable)normalColor
                               titleHighlightedColor:(UIColor *_Nullable)highlightedColor;

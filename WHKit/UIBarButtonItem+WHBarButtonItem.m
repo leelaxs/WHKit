@@ -10,7 +10,14 @@
 
 @implementation UIBarButtonItem (WHBarButtonItem)
 
-+(instancetype _Nullable )wh_barButtonItemWithTitle:(NSString *_Nullable)title imageName:(NSString *_Nullable)imageName target:(nullable id)target action:(nonnull SEL)action fontSize:(CGFloat)fontSize titleNormalColor:(UIColor *_Nullable)normalColor titleHighlightedColor:(UIColor *_Nullable)highlightedColor {
++(instancetype _Nullable )wh_barButtonItemWithTitle:(NSString *_Nullable)title
+                                          imageName:(NSString *_Nullable)imageName
+                                             target:(nullable id)target
+                                             action:(nonnull SEL)action
+                                            btnSize:(CGSize)btnSize
+                                           fontSize:(CGFloat)fontSize
+                                   titleNormalColor:(UIColor *_Nullable)normalColor
+                              titleHighlightedColor:(UIColor *_Nullable)highlightedColor {
     
     UIButton *button = [UIButton new];
     [button setTitle:title forState:UIControlStateNormal];
@@ -19,7 +26,11 @@
     [button setTitleColor:highlightedColor forState:UIControlStateHighlighted];
     button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    [button sizeToFit];
+    if (CGSizeEqualToSize(btnSize, CGSizeZero)) {
+        [button sizeToFit];
+    }else{
+        button.frame = CGRectMake(0, 0, btnSize.width, btnSize.height);
+    }
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 

@@ -16,82 +16,78 @@ static char kActionHandlerLongPressGestureKey;
 
 @implementation UIView (WHView)
 
-- (void)setX:(CGFloat)x{
+- (void)setWh_x:(CGFloat)wh_x{
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = wh_x;
     self.frame = frame;
 }
 
-- (CGFloat)x{
+- (CGFloat)wh_x{
     return self.frame.origin.x;
 }
 
-- (void)setY:(CGFloat)y{
+- (void)setWh_y:(CGFloat)wh_y{
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = wh_y;
     self.frame = frame;
 }
 
-- (CGFloat)y{
+- (CGFloat)wh_y{
     return self.frame.origin.y;
 }
 
 
-- (void)setWidth:(CGFloat)width{
+- (void)setWh_width:(CGFloat)wh_width{
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = wh_width;
     self.frame = frame;
 }
 
-- (CGFloat)width{
+- (CGFloat)wh_width{
     return self.frame.size.width;
 }
 
-- (void)setHeight:(CGFloat)height{
+- (void)setWh_height:(CGFloat)wh_height{
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = wh_height;
     self.frame = frame;
 }
 
-- (CGFloat)height{
+- (CGFloat)wh_height{
     return self.frame.size.height;
 }
 
 
-- (void)setCenterX:(CGFloat)centerX{
+- (void)setWh_centerX:(CGFloat)wh_centerX{
     CGPoint point = self.center;
-    point.x = centerX;
+    point.x = wh_centerX;
     self.center = point;
 }
 
-- (CGFloat)centerX{
+- (CGFloat)wh_centerX{
     return self.center.x;
 }
 
-- (void)setCenterY:(CGFloat)centerY{
+- (void)setWh_centerY:(CGFloat)wh_centerY{
     CGPoint point = self.center;
-    point.y = centerY;
+    point.y = wh_centerY;
     self.center = point;
 }
 
-- (CGFloat)centerY{
+- (CGFloat)wh_centerY{
     return self.center.y;
 }
 
-- (void)setSize:(CGSize)size{
+- (void)setWh_size:(CGSize)wh_size{
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = wh_size;
     self.frame = frame;
 }
 
 
-- (CGSize)size{
+- (CGSize)wh_size{
     return self.frame.size;
 }
-
-
-
-
 
 
 - (void)wh_addTapActionWithBlock:(TapActionBlock)block
