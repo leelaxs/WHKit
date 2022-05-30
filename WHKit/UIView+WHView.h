@@ -20,7 +20,12 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
 @property (nonatomic, assign) CGSize wh_size;
 @property (nonatomic, assign) CGFloat wh_centerX;
 @property (nonatomic, assign) CGFloat wh_centerY;
-
+@property (nonatomic, assign) CGFloat wh_bottom;
+@property (nonatomic, assign) CGFloat wh_right;
+@property (nonatomic, assign, readonly) CGPoint wh_origin;
+@property (nonatomic, assign, readonly) CGPoint wh_bottomLeft;
+@property (nonatomic, assign, readonly) CGPoint wh_bottomRight;
+@property (nonatomic, assign, readonly) CGPoint wh_topRight;
 /** 截取成图片 */
 - (UIImage *)wh_snapshotImage;
 

@@ -84,10 +84,59 @@ static char kActionHandlerLongPressGestureKey;
     self.frame = frame;
 }
 
-
 - (CGSize)wh_size{
     return self.frame.size;
 }
+
+- (void)setWh_bottom:(CGFloat)wh_bottom{
+    CGRect frame = self.frame;
+    frame.origin.y = wh_bottom - self.frame.size.height;
+    self.frame = frame;
+}
+
+- (CGFloat)wh_bottom{
+    return self.frame.origin.y + self.frame.size.height;
+}
+
+- (void)setWh_right:(CGFloat)wh_right{
+    CGFloat delta = wh_right - (self.frame.origin.x + self.frame.size.width);
+    CGRect newframe = self.frame;
+    newframe.origin.x += delta ;
+    self.frame = newframe;
+}
+
+- (CGFloat)wh_right{
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+- (void)setWh_origin:(CGPoint)wh_origin{
+    CGRect frame = self.frame;
+    frame.origin = wh_origin;
+    self.frame = frame;
+}
+
+- (CGPoint)wh_origin{
+    return self.frame.origin;
+}
+
+- (CGPoint)wh_bottomLeft{
+    CGFloat x = self.frame.origin.x;
+    CGFloat y = self.frame.origin.y + self.frame.size.height;
+    return CGPointMake(x, y);
+}
+
+- (CGPoint)wh_bottomRight{
+    CGFloat x = self.frame.origin.x + self.frame.size.width;
+    CGFloat y = self.frame.origin.y + self.frame.size.height;
+    return CGPointMake(x, y);
+}
+
+- (CGPoint)wh_topRight{
+    CGFloat x = self.frame.origin.x + self.frame.size.width;
+    CGFloat y = self.frame.origin.y;
+    return CGPointMake(x, y);
+}
+
 
 
 - (void)wh_addTapActionWithBlock:(TapActionBlock)block
