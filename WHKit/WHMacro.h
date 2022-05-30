@@ -41,17 +41,31 @@ static inline BOOL isIphoneX() {
     return result;
 }
 
-//NSLog
+static inline CGFloat wh_statusBarHeight() {
+    CGFloat statusBarHeight = 0;
+    if (@available(iOS 13.0, *)) {
+        statusBarHeight = wh_currentWindow().windowScene.statusBarManager.statusBarFrame.size.height;
+    } else {
+        statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+    return statusBarHeight;
+}
+
+/// 替换系统NSLog
 #ifdef DEBUG
 #define NSLog(...) NSLog(@"%s 第%d行: %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
 #else
 #define NSLog(...)
 #endif
 
-//APP版本号
-#define KAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-//系统版本号
+/// APP版本号
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+/// 系统版本号
 #define kSystemVersion [[UIDevice currentDevice] systemVersion]
+
+/// 获取一段时间间隔
+#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+#define kEndTime   NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start)
 
 //黑色和白色
 #define kWhiteColor [UIColor whiteColor]
@@ -71,13 +85,13 @@ static inline BOOL isIphoneX() {
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES]
 
-//字符串是否为空
+/// 字符串是否为空
 #define kIsStringEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
-//数组是否为空
+/// 数组是否为空
 #define kIsArrayEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
-//字典是否为空
+/// 字典是否为空
 #define kIsDictEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
-//是否是空对象
+/// 是否是空对象
 #define kIsObjectEmpty(_object) (_object == nil \
 || [_object isKindOfClass:[NSNull class]] \
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
@@ -92,22 +106,28 @@ static inline BOOL isIphoneX() {
 //屏幕Size
 #define kScreenSize \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale) : [UIScreen mainScreen].bounds.size)
-//状态栏加导航栏高度
-#define kTopHeight (kIs_iPhoneX ? 88 : 64)
-//TabBar高度
+///状态栏高度
+#define kStatusBarHeight (wh_statusBarHeight())
+/// 导航栏高度
+#define kNavBarHeight 44.0
+/// 状态栏加导航栏高度
+#define kTopHeight (kStatusBarHeight+kNavBarHeight)
+/// TabBar高度
 #define kTabBarHeight (kIs_iPhoneX ? 83 : 49)
+/// 底部安全区域远离高度
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX ? 34.0 : 0)
 
-//Aplication
+/// Aplication
 #define kApplication [UIApplication sharedApplication]
-//currentWindow
+/// current key Window
 #define kKeyWindow (wh_currentWindow())
-//currentWindow
+/// currentWindow
 #define KCurrentWindow (wh_currentWindow())
-//AppDelegate
+/// AppDelegate
 #define kAppdelegate [UIApplication sharedApplication].delegate
-//UserDefaults
+/// UserDefaults
 #define kUserDefault [NSUserDefaults standardUserDefaults]
-//NSNotificationCenter
+/// NSNotificationCenter
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
 //获取当前语言
@@ -165,10 +185,6 @@ autoreleasepool{} __strong nob_defer_block_t nob_macro_concat(__nob_stack_defer_
 #define kDegreesToRadian(x) (M_PI * (x) / 180.0)
 //由弧度转换角度
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
-
-//获取一段时间间隔
-#define kStart CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
-#define KEnd NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start)
 
 // 图片
 #define kImageOfFile(NAME,EXT) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
