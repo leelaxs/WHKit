@@ -16,7 +16,6 @@
     label.text = text;
     label.font = [UIFont systemFontOfSize:font];
     label.textColor = color;
-    label.textAlignment=YES;
     label.frame=frame;
     return label;
 }
