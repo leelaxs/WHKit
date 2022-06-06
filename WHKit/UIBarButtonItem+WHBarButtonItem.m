@@ -21,11 +21,13 @@
     
     UIButton *button = [UIButton new];
     [button setTitle:title forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button setTitleColor:normalColor forState:UIControlStateNormal];
     [button setTitleColor:highlightedColor forState:UIControlStateHighlighted];
     button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    if (imageName && ![@"" isEqualToString:imageName]) {
+        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    }
     if (CGSizeEqualToSize(btnSize, CGSizeZero)) {
         [button sizeToFit];
     }else{
