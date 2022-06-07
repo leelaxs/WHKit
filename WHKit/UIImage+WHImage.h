@@ -106,6 +106,21 @@ typedef void (^UIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
  @return 带有阴影的图片
  */
 - (UIImage *)imageWithShadowColor:(UIColor *)color offset:(CGSize)offset blur:(CGFloat)blur;
+/**
+ 绘制图片
+
+ @param color 背景色
+ @param size 大小
+ @param text 文字
+ @param textAttributes 字体设置
+ @param isCircular 是否圆形
+ @return 图片
+ */
+- (UIImage *)wh_imageWithColor:(UIColor *)color
+                          size:(CGSize)size
+                          text:(NSString *)text
+                textAttributes:(NSDictionary *)textAttributes
+                      circular:(BOOL)isCircular;
 
 /**
  透明图片
