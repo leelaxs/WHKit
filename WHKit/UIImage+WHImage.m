@@ -1084,7 +1084,7 @@ static CGRect swapWidthAndHeight(CGRect rect)
 }
 
 
-- (UIImage *)wh_imageWithColor:(UIColor *)color
++ (UIImage *)wh_imageWithColor:(UIColor *)color
                           size:(CGSize)size
                           text:(NSString *)text
                 textAttributes:(NSDictionary *)textAttributes

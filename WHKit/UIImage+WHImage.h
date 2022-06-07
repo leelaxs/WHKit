@@ -116,7 +116,7 @@ typedef void (^UIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
  @param isCircular 是否圆形
  @return 图片
  */
-- (UIImage *)wh_imageWithColor:(UIColor *)color
++ (UIImage *)wh_imageWithColor:(UIColor *)color
                           size:(CGSize)size
                           text:(NSString *)text
                 textAttributes:(NSDictionary *)textAttributes
