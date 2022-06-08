@@ -29,7 +29,7 @@
 #import <WHKit/CALayer+WHLayer.h>
 #import <WHKit/UIAlertController+WHAlert.h>
 #import <WHKit/Foundation+Safe.h>
-
+#import <WHKit/UIView+WHDraw.h>
 #import <WHKit/WHMethods.h>
 
 #import <WHKit/WHMacro.h>

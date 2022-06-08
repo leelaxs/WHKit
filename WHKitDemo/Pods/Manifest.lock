@@ -1,5 +1,5 @@
 PODS:
-  - WHKit (1.8.0)
+  - WHKit (1.9.0)
 
 DEPENDENCIES:
   - WHKit (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WHKit: e7fd9bcc45f185d207c649801c1ea9d18ba31327
+  WHKit: 9fd3adafa1e287b82d24a6ddaa1a93cc3dc4cbc6
 
 PODFILE CHECKSUM: 4c052a1f8899b9918dcaf408a2fd93efb61ef168
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

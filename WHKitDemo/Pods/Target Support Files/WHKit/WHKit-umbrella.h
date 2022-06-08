@@ -32,6 +32,7 @@
 #import "UINavigationController+WHNavigationController.h"
 #import "UIScrollView+WHScrollView.h"
 #import "UITableView+WHTableView.h"
+#import "UIView+WHDraw.h"
 #import "UIView+WHView.h"
 #import "UIViewController+WHVC.h"
 #import "WHKit.h"
