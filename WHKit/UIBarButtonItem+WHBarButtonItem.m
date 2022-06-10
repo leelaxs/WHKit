@@ -17,15 +17,11 @@
                                             btnSize:(CGSize)btnSize
                                            fontSize:(CGFloat)fontSize
                                    titleNormalColor:(UIColor *_Nullable)normalColor
-                                  titleDisableColor:(UIColor *_Nullable)disableColor
-                                   titleSelectColor:(UIColor *_Nullable)selectColor
                               titleHighlightedColor:(UIColor *_Nullable)highlightedColor {
     
     UIButton *button = [UIButton new];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:normalColor forState:UIControlStateNormal];
-    [button setTitleColor:disableColor forState:UIControlStateDisabled];
-    [button setTitleColor:selectColor forState:UIControlStateSelected];
     [button setTitleColor:highlightedColor forState:UIControlStateHighlighted];
     button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];

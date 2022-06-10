@@ -18,8 +18,6 @@
                                             btnSize:(CGSize)btnSize
                                            fontSize:(CGFloat)fontSize
                                    titleNormalColor:(UIColor *_Nullable)normalColor
-                                  titleDisableColor:(UIColor *_Nullable)disableColor
-                                   titleSelectColor:(UIColor *_Nullable)selectColor
                               titleHighlightedColor:(UIColor *_Nullable)highlightedColor;
 
 @end
