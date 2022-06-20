@@ -36,7 +36,6 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
                     backImageName:(NSString *)backImageName
                        titleColor:(UIColor *)color
                          fontSize:(int)fontSize
-                            frame:(CGRect)frame
                      cornerRadius:(CGFloat)cornerRadius {
     
     UIButton *button = [UIButton new];
@@ -48,7 +47,6 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
     [button setTitleColor:color forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
     [button sizeToFit];
-    button.frame=frame;
     button.layer.cornerRadius=cornerRadius;
     button.clipsToBounds=YES;
     return button;

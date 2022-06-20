@@ -18,7 +18,6 @@ typedef void (^TouchedButtonBlock)(void);
                     backImageName:(NSString *)backImageName
                        titleColor:(UIColor *)color
                          fontSize:(int)fontSize
-                            frame:(CGRect)frame
                      cornerRadius:(CGFloat)cornerRadius;
 
 /**

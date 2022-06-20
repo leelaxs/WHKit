@@ -10,6 +10,11 @@
 #import <CoreText/CoreText.h>
 
 @implementation UILabel (WHLabel)
++(instancetype)wh_labelWithText:(NSString *)text
+                       textFont:(int)font
+                      textColor:(UIColor *)color{
+    return [self wh_labelWithText:text textFont:font textColor:color frame:CGRectZero];
+}
 
 +(instancetype)wh_labelWithText:(NSString *)text textFont:(int)font textColor:(UIColor *)color frame:(CGRect)frame{
     UILabel *label = [UILabel new];

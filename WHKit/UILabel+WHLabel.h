@@ -11,7 +11,9 @@
 @interface UILabel (WHLabel)
 
 /** 快速创建Label */
-+(instancetype)wh_labelWithText:(NSString *)text textFont:(int)font textColor:(UIColor *)color frame:(CGRect)frame;
++(instancetype)wh_labelWithText:(nullable NSString *)text
+                       textFont:(int)font
+                      textColor:(nullable UIColor *)color;
 
 /** 设置字间距 */
 - (void)setColumnSpace:(CGFloat)columnSpace;
