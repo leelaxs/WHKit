@@ -23,6 +23,7 @@ NSString const *UIButton_badgeOriginYKey = @"UIButton_badgeOriginYKey";
 NSString const *UIButton_shouldHideBadgeAtZeroKey = @"UIButton_shouldHideBadgeAtZeroKey";
 NSString const *UIButton_shouldAnimateBadgeKey = @"UIButton_shouldAnimateBadgeKey";
 NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
+NSString const *UIButton_badgeNoTextKey = @"UIButton_badgeNoTextKey";
 
 
 @implementation UIButton (WHButton)
@@ -313,6 +314,24 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
     objc_setAssociatedObject(self, &UIButton_badgeMinSizeKey, number, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if (self.badge) {
         [self updateBadgeFrame];
+    }
+}
+
+- (BOOL) showBadge {
+    NSNumber *number = objc_getAssociatedObject(self, &UIButton_badgeNoTextKey);
+    return number.boolValue;
+}
+- (void)setShowBadge:(BOOL)showBadge
+{
+    NSNumber *number = [NSNumber numberWithBool:showBadge];
+    objc_setAssociatedObject(self, &UIButton_badgeNoTextKey, number, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if (showBadge) {
+        self.badgeValue = @" ";
+        self.badgeTextColor = [UIColor clearColor];
+        self.badgeFont = [UIFont systemFontOfSize:0];
+        self.badgeMinSize = 3;
+    }else{
+        self.badgeValue = @"";
     }
 }
 

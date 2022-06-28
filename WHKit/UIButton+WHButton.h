@@ -41,6 +41,8 @@ typedef void (^TouchedButtonBlock)(void);
 /** 改变按钮的响应区域,上左下右分别增加或减小多少 正数为增加 负数为减小 */
 @property (nonatomic, assign) UIEdgeInsets clickEdgeInsets;
 
+/** 显示红点角标(无数字) */
+@property (nonatomic) BOOL showBadge;
 /** 角标 */
 @property (strong, nonatomic) UILabel *badge;
 

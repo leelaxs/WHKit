@@ -12,7 +12,12 @@
 
 /** 快速创建Label */
 +(instancetype)wh_labelWithText:(nullable NSString *)text
-                       textFont:(int)font
+                       textSize:(int)size
+                      textColor:(nullable UIColor *)color;
+
+/** 快速创建Label */
++(instancetype)wh_labelWithText:(nullable NSString *)text
+                       textFont:(nullable UIFont *)font
                       textColor:(nullable UIColor *)color;
 
 /** 设置字间距 */

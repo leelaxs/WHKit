@@ -11,15 +11,21 @@
 
 @implementation UILabel (WHLabel)
 +(instancetype)wh_labelWithText:(NSString *)text
-                       textFont:(int)font
+                       textSize:(int)size
                       textColor:(UIColor *)color{
+    return [self wh_labelWithText:text textFont:[UIFont systemFontOfSize:size] textColor:color frame:CGRectZero];
+}
+
++(instancetype)wh_labelWithText:(nullable NSString *)text
+                       textFont:(UIFont *)font
+                      textColor:(nullable UIColor *)color{
     return [self wh_labelWithText:text textFont:font textColor:color frame:CGRectZero];
 }
 
-+(instancetype)wh_labelWithText:(NSString *)text textFont:(int)font textColor:(UIColor *)color frame:(CGRect)frame{
++(instancetype)wh_labelWithText:(NSString *)text textFont:(UIFont *)font textColor:(UIColor *)color frame:(CGRect)frame{
     UILabel *label = [UILabel new];
     label.text = text;
-    label.font = [UIFont systemFontOfSize:font];
+    label.font = font;
     label.textColor = color;
     label.frame=frame;
     return label;
