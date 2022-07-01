@@ -741,6 +741,21 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
     return grayImage;
 }
 
++ (UIImage *)wh_setCornerWithImage:(UIImage *)image
+                      cornerRadius:(CGFloat)cornerRadius
+                           corners:(UIRectCorner)corners{
+    CGRect rect = CGRectMake(0, 0, image.size.width, image.size.height);
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0);
+    [[UIBezierPath bezierPathWithRoundedRect:rect
+                           byRoundingCorners:corners
+                                 cornerRadii:CGSizeMake(cornerRadius, cornerRadius)] addClip];
+
+    [image drawInRect:rect];
+    UIImage *nImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return nImage;
+}
+
 
 
 

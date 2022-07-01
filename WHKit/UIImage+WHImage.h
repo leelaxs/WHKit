@@ -122,6 +122,20 @@ typedef void (^UIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
                 textAttributes:(NSDictionary *)textAttributes
                       circular:(BOOL)isCircular;
 
+
+
+/**
+ 设置图片圆角
+
+ @param image 目标图片
+ @param cornerRadius 圆角大小
+ @param corners 圆角位置
+ @return 图片
+ */
++ (UIImage *)wh_setCornerWithImage:(UIImage *)image
+                      cornerRadius:(CGFloat)cornerRadius
+                           corners:(UIRectCorner)corners;
+
 /**
  透明图片
 
