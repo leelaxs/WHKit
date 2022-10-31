@@ -10,7 +10,7 @@
 
 @implementation UINavigationController (WHNavigationController)
 
-- (id)findViewController:(Class)className;
+- (id)wh_findViewController:(Class)className;
 {
     for (UIViewController *viewController in self.viewControllers)
     {
@@ -32,7 +32,7 @@
     return NO;
 }
 
-- (UIViewController *)rootViewController
+- (UIViewController *)wh_rootViewController
 {
     if (self.viewControllers && [self.viewControllers count] >0)
     {
@@ -41,12 +41,12 @@
     return nil;
 }
 
-- (NSArray *)popToViewControllerWithClassName:(Class)className animated:(BOOL)animated;
+- (NSArray *)wh_popToViewControllerWithClassName:(Class)className animated:(BOOL)animated;
 {
-    return [self popToViewController:[self findViewController:className] animated:YES];
+    return [self popToViewController:[self wh_findViewController:className] animated:YES];
 }
 
-- (NSArray *)popToViewControllerWithLevel:(NSInteger)level animated:(BOOL)animated
+- (NSArray *)wh_popToViewControllerWithLevel:(NSInteger)level animated:(BOOL)animated
 {
     NSInteger viewControllersCount = self.viewControllers.count;
     if (viewControllersCount > level) {
@@ -59,7 +59,7 @@
 }
 
 
-- (void)pushViewController:(UIViewController *)controller withTransition:(UIViewAnimationTransition)transition {
+- (void)wh_pushViewController:(UIViewController *)controller withTransition:(UIViewAnimationTransition)transition {
     [UIView beginAnimations:nil context:NULL];
     [self pushViewController:controller animated:NO];
     [UIView setAnimationDuration:0.5];
@@ -68,7 +68,7 @@
     [UIView commitAnimations];
 }
 
-- (UIViewController *)popViewControllerWithTransition:(UIViewAnimationTransition)transition {
+- (UIViewController *)wh_popViewControllerWithTransition:(UIViewAnimationTransition)transition {
     [UIView beginAnimations:nil context:NULL];
     UIViewController *controller = [self popViewControllerAnimated:NO];
     [UIView setAnimationDuration:0.5];

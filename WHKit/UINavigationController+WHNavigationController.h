@@ -11,24 +11,24 @@
 @interface UINavigationController (WHNavigationController)
 
 /** 寻找Navigation中的某个viewcontroler */
-- (id)findViewController:(Class)className;
+- (id)wh_findViewController:(Class)className;
 
 /** 判断是否只有一个RootViewController */
 - (BOOL)isOnlyContainRootViewController;
 
 /** RootViewController */
-- (UIViewController *)rootViewController;
+- (UIViewController *)wh_rootViewController;
 
 /** 返回指定的viewcontroler */
-- (NSArray *)popToViewControllerWithClassName:(Class)className animated:(BOOL)animated;
+- (NSArray *)wh_popToViewControllerWithClassName:(Class)className animated:(BOOL)animated;
 
 /** pop回第n层 */
-- (NSArray *)popToViewControllerWithLevel:(NSInteger)level animated:(BOOL)animated;
+- (NSArray *)wh_popToViewControllerWithLevel:(NSInteger)level animated:(BOOL)animated;
 
 /** 以某种动画形式push */
-- (void)pushViewController:(UIViewController *)controller withTransition:(UIViewAnimationTransition)transition;
+- (void)wh_pushViewController:(UIViewController *)controller withTransition:(UIViewAnimationTransition)transition;
 
 /** 以某种动画形式pop */
-- (UIViewController *)popViewControllerWithTransition:(UIViewAnimationTransition)transition;
+- (UIViewController *)wh_popViewControllerWithTransition:(UIViewAnimationTransition)transition;
 
 @end
