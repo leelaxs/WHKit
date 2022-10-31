@@ -116,6 +116,8 @@ static inline CGFloat wh_statusBarHeight() {
 #define kTabBarHeight (kIs_iPhoneX ? 83 : 49)
 /// 底部安全区域远离高度
 #define kBottomSafeHeight (CGFloat)(kIs_iPhoneX ? 34.0 : 0)
+///状态栏真实高度
+#define kStatusBarRealHeight (kIs_iPhoneX ? 44.0 : 20.0)
 
 /// Aplication
 #define kApplication [UIApplication sharedApplication]
