@@ -32,7 +32,7 @@
     return NO;
 }
 
-- (UIViewController *)wh_rootViewController
+- (UIViewController *)rootViewController
 {
     if (self.viewControllers && [self.viewControllers count] >0)
     {

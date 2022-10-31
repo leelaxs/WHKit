@@ -17,7 +17,7 @@
 - (BOOL)isOnlyContainRootViewController;
 
 /** RootViewController */
-- (UIViewController *)wh_rootViewController;
+- (UIViewController *)rootViewController;
 
 /** 返回指定的viewcontroler */
 - (NSArray *)wh_popToViewControllerWithClassName:(Class)className animated:(BOOL)animated;
