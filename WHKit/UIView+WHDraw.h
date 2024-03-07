@@ -19,34 +19,34 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (WHDraw)
 
 /// draw line in view.
-- (void)wh_drawLineFromPoint:(CGPoint)fPoint
-                     toPoint:(CGPoint)tPoint
-                   lineColor:(UIColor *)color
-                  lineHeight:(CGFloat)height;
+- (CAShapeLayer *)wh_drawLineFromPoint:(CGPoint)fPoint
+                               toPoint:(CGPoint)tPoint
+                             lineColor:(UIColor *)color
+                            lineHeight:(CGFloat)height;
 
 /// draw dash line in view. type: 0 - cube, 1 - round
-- (void)wh_drawDashLineFromPoint:(CGPoint)fPoint
-                         toPoint:(CGPoint)tPoint
-                       lineColor:(UIColor *)color
-                       lineWidth:(CGFloat)width
-                      lineHeight:(CGFloat)height
-                       lineSpace:(CGFloat)space
-                        lineType:(NSInteger)type;
+- (CAShapeLayer *)wh_drawDashLineFromPoint:(CGPoint)fPoint
+                                   toPoint:(CGPoint)tPoint
+                                 lineColor:(UIColor *)color
+                                 lineWidth:(CGFloat)width
+                                lineHeight:(CGFloat)height
+                                 lineSpace:(CGFloat)space
+                                  lineType:(NSInteger)type;
 
 /// draw pentagram in view. rate: 0.3 ~ 1.1
-- (void)wh_drawPentagram:(CGPoint)center
-                  radius:(CGFloat)radius
-                   color:(UIColor *)color
-                    rate:(CGFloat)rate;
+- (CAShapeLayer *)wh_drawPentagram:(CGPoint)center
+                            radius:(CGFloat)radius
+                             color:(UIColor *)color
+                              rate:(CGFloat)rate;
 
 /// draw rect. type: 0 - cube, 1 - round
-- (void)wh_drawRect:(CGRect)rect
-          lineColor:(UIColor *)color
-          lineWidth:(CGFloat)width
-         lineHeight:(CGFloat)height
-           lineType:(NSInteger)type
-             isDash:(BOOL)dash
-          lineSpace:(CGFloat)space;
+- (CAShapeLayer *)wh_drawRect:(CGRect)rect
+                    lineColor:(UIColor *)color
+                    lineWidth:(CGFloat)width
+                   lineHeight:(CGFloat)height
+                     lineType:(NSInteger)type
+                       isDash:(BOOL)dash
+                    lineSpace:(CGFloat)space;
 
 /// gradient layer with direction.
 - (CALayer *)wh_gradientLayer:(CGRect)rect
@@ -62,34 +62,34 @@ NS_ASSUME_NONNULL_BEGIN
                          type:(NSInteger)type;
 
 /// draw oval. type: 0 - cube, 1 - round
-- (void)wh_drawOval:(CGRect)rect
-          lineColor:(UIColor *)color
-          lineWidth:(CGFloat)width
-         lineHeight:(CGFloat)height
-           lineType:(NSInteger)type
-             isDash:(BOOL)dash
-          lineSpace:(CGFloat)space;
+- (CAShapeLayer *)wh_drawOval:(CGRect)rect
+                    lineColor:(UIColor *)color
+                    lineWidth:(CGFloat)width
+                   lineHeight:(CGFloat)height
+                     lineType:(NSInteger)type
+                       isDash:(BOOL)dash
+                    lineSpace:(CGFloat)space;
 
 /// draw round rect. type: 0 - cube, 1 - round
-- (void)wh_drawRoundRect:(CGRect)rect
-               lineColor:(UIColor *)color
-               lineWidth:(CGFloat)width
-              lineHeight:(CGFloat)height
-                lineType:(NSInteger)type
-                  isDash:(BOOL)dash
-               lineSpace:(CGFloat)space
-                  radius:(CGFloat)radius;
+- (CAShapeLayer *)wh_drawRoundRect:(CGRect)rect
+                         lineColor:(UIColor *)color
+                         lineWidth:(CGFloat)width
+                        lineHeight:(CGFloat)height
+                          lineType:(NSInteger)type
+                            isDash:(BOOL)dash
+                         lineSpace:(CGFloat)space
+                            radius:(CGFloat)radius;
 
 /// draw round rect. type: 0 - cube, 1 - round
-- (void)wh_drawRoundRect:(CGRect)rect
-         roundingCorners:(UIRectCorner)corners
-               lineColor:(UIColor *)color
-               lineWidth:(CGFloat)width
-              lineHeight:(CGFloat)height
-                lineType:(NSInteger)type
-                  isDash:(BOOL)dash
-               lineSpace:(CGFloat)space
-                  radius:(CGFloat)radius;
+- (CAShapeLayer *)wh_drawRoundRect:(CGRect)rect
+                   roundingCorners:(UIRectCorner)corners
+                         lineColor:(UIColor *)color
+                         lineWidth:(CGFloat)width
+                        lineHeight:(CGFloat)height
+                          lineType:(NSInteger)type
+                            isDash:(BOOL)dash
+                         lineSpace:(CGFloat)space
+                            radius:(CGFloat)radius;
 @end
 
 NS_ASSUME_NONNULL_END

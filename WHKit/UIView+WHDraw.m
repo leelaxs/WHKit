@@ -9,7 +9,7 @@
 
 @implementation UIView (WHDraw)
 //画直线 - draw line in view.
-- (void)wh_drawLineFromPoint:(CGPoint)fPoint
+- (CAShapeLayer *)wh_drawLineFromPoint:(CGPoint)fPoint
                      toPoint:(CGPoint)tPoint
                    lineColor:(UIColor *)color
                    lineHeight:(CGFloat)height
@@ -28,10 +28,11 @@
     });
     shapeLayer.lineWidth = height;
     [self.layer addSublayer:shapeLayer];
+    return shapeLayer;
 }
 
 //画虚线 - draw dash line.
-- (void)wh_drawDashLineFromPoint:(CGPoint)fPoint
+- (CAShapeLayer *)wh_drawDashLineFromPoint:(CGPoint)fPoint
                          toPoint:(CGPoint)tPoint
                        lineColor:(UIColor *)color
                        lineWidth:(CGFloat)width
@@ -62,10 +63,11 @@
         shapeLayer.lineDashPattern = @[@(width),@(space+width)];
     }
     [self.layer addSublayer:shapeLayer];
+    return shapeLayer;
 }
 
 //画五角星 - draw pentagram
-- (void)wh_drawPentagram:(CGPoint)center
+- (CAShapeLayer *)wh_drawPentagram:(CGPoint)center
                   radius:(CGFloat)radius
                    color:(UIColor *)color
                     rate:(CGFloat)rate
@@ -103,26 +105,26 @@
     shapeLayer.lineWidth = 1.0f;
     shapeLayer.lineJoin = kCALineJoinRound;
     [self.layer addSublayer:shapeLayer];
+    return shapeLayer;
 }
 
-- (void)wh_drawRect:(CGRect)rect
-          lineColor:(UIColor *)color
-          lineWidth:(CGFloat)width
-         lineHeight:(CGFloat)height
-           lineType:(NSInteger)type
-             isDash:(BOOL)dash
-          lineSpace:(CGFloat)space
-{
-    [self wh_drawInRect:rect
-              lineColor:color
-              lineWidth:width
-             lineHeight:height
-               lineType:type
-                 isDash:dash
-              lineSpace:space
-               pathType:0
-                 radius:0
-                corners:0];
+- (CAShapeLayer *)wh_drawRect:(CGRect)rect
+                    lineColor:(UIColor *)color
+                    lineWidth:(CGFloat)width
+                   lineHeight:(CGFloat)height
+                     lineType:(NSInteger)type
+                       isDash:(BOOL)dash
+                    lineSpace:(CGFloat)space{
+    return [self wh_drawInRect:rect
+                     lineColor:color
+                     lineWidth:width
+                    lineHeight:height
+                      lineType:type
+                        isDash:dash
+                     lineSpace:space
+                      pathType:0
+                        radius:0
+                       corners:0];
 }
 
 - (CALayer *)wh_gradientLayer:(CGRect)rect
@@ -210,15 +212,14 @@
     return layer;
 }
 
-- (void)wh_drawOval:(CGRect)rect
-          lineColor:(UIColor *)color
-          lineWidth:(CGFloat)width
-         lineHeight:(CGFloat)height
-           lineType:(NSInteger)type
-             isDash:(BOOL)dash
-          lineSpace:(CGFloat)space
-{
-    [self wh_drawInRect:rect
+- (CAShapeLayer *)wh_drawOval:(CGRect)rect
+                    lineColor:(UIColor *)color
+                    lineWidth:(CGFloat)width
+                   lineHeight:(CGFloat)height
+                     lineType:(NSInteger)type
+                       isDash:(BOOL)dash
+            lineSpace:(CGFloat)space{
+    return [self wh_drawInRect:rect
               lineColor:color
               lineWidth:width
              lineHeight:height
@@ -232,60 +233,57 @@
 }
 
 /// draw round rect. type: 0 - cube, 1 - round
-- (void)wh_drawRoundRect:(CGRect)rect
-               lineColor:(UIColor *)color
-               lineWidth:(CGFloat)width
-              lineHeight:(CGFloat)height
-                lineType:(NSInteger)type
-                  isDash:(BOOL)dash
-               lineSpace:(CGFloat)space
-                  radius:(CGFloat)radius
-{
-    [self wh_drawInRect:rect
-              lineColor:color
-              lineWidth:width
-             lineHeight:height
-               lineType:type
-                 isDash:dash
-              lineSpace:space
-               pathType:2
-                 radius:radius
-                corners:0];
+- (CAShapeLayer *)wh_drawRoundRect:(CGRect)rect
+                         lineColor:(UIColor *)color
+                         lineWidth:(CGFloat)width
+                        lineHeight:(CGFloat)height
+                          lineType:(NSInteger)type
+                            isDash:(BOOL)dash
+                         lineSpace:(CGFloat)space
+                            radius:(CGFloat)radius{
+    return [self wh_drawInRect:rect
+                     lineColor:color
+                     lineWidth:width
+                    lineHeight:height
+                      lineType:type
+                        isDash:dash
+                     lineSpace:space
+                      pathType:2
+                        radius:radius
+                       corners:0];
 }
 
-- (void)wh_drawRoundRect:(CGRect)rect
-         roundingCorners:(UIRectCorner)corners
-               lineColor:(UIColor *)color
-               lineWidth:(CGFloat)width
-              lineHeight:(CGFloat)height
-                lineType:(NSInteger)type
-                  isDash:(BOOL)dash
-               lineSpace:(CGFloat)space
-                  radius:(CGFloat)radius
-{
-    [self wh_drawInRect:rect
-              lineColor:color
-              lineWidth:width
-             lineHeight:height
-               lineType:type
-                 isDash:dash
-              lineSpace:space
-               pathType:3
-                 radius:radius
-                corners:corners];
+- (CAShapeLayer *)wh_drawRoundRect:(CGRect)rect
+                   roundingCorners:(UIRectCorner)corners
+                         lineColor:(UIColor *)color
+                         lineWidth:(CGFloat)width
+                        lineHeight:(CGFloat)height
+                          lineType:(NSInteger)type
+                            isDash:(BOOL)dash
+                         lineSpace:(CGFloat)space
+                            radius:(CGFloat)radius{
+    return [self wh_drawInRect:rect
+                     lineColor:color
+                     lineWidth:width
+                    lineHeight:height
+                      lineType:type
+                        isDash:dash
+                     lineSpace:space
+                      pathType:3
+                        radius:radius
+                       corners:corners];
 }
 
-- (void)wh_drawInRect:(CGRect)rect
-            lineColor:(UIColor *)color
-            lineWidth:(CGFloat)width
-           lineHeight:(CGFloat)height
-             lineType:(NSInteger)type
-               isDash:(BOOL)dash
-            lineSpace:(CGFloat)space
-             pathType:(NSInteger)pathType
-               radius:(CGFloat)radius
-              corners:(UIRectCorner)corners
-{
+- (CAShapeLayer *)wh_drawInRect:(CGRect)rect
+                      lineColor:(UIColor *)color
+                      lineWidth:(CGFloat)width
+                     lineHeight:(CGFloat)height
+                       lineType:(NSInteger)type
+                         isDash:(BOOL)dash
+                      lineSpace:(CGFloat)space
+                       pathType:(NSInteger)pathType
+                         radius:(CGFloat)radius
+                        corners:(UIRectCorner)corners{
     CAShapeLayer* shapeLayer = [CAShapeLayer layer];
     shapeLayer.strokeColor = [UIColor lightGrayColor].CGColor;
     if (color) {
@@ -323,5 +321,6 @@
     }
     
     [self.layer addSublayer:shapeLayer];
+    return shapeLayer;
 }
 @end
