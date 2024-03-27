@@ -52,11 +52,11 @@ static inline CGFloat wh_statusBarHeight() {
 }
 
 /// 替换系统NSLog
-#ifdef DEBUG
-#define NSLog(...) NSLog(@"%s 第%d行: %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
-#else
-#define NSLog(...)
-#endif
+//#ifdef DEBUG
+//#define NSLog(...) NSLog(@"%s 第%d行: %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+//#else
+//#define NSLog(...)
+//#endif
 
 /// APP版本号
 #define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
