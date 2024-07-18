@@ -28,7 +28,6 @@
 #import "UIColor+WHColor.h"
 #import "UIDevice+WHDevice.h"
 #import "UIImage+WHImage.h"
-#import "UILabel+WHLabel.h"
 #import "UINavigationController+WHNavigationController.h"
 #import "UIScrollView+WHScrollView.h"
 #import "UITableView+WHTableView.h"

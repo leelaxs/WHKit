@@ -20,7 +20,6 @@
 #import <WHKit/UIColor+WHColor.h>
 #import <WHKit/UIDevice+WHDevice.h>
 #import <WHKit/UIImage+WHImage.h>
-#import <WHKit/UILabel+WHLabel.h>
 #import <WHKit/UINavigationController+WHNavigationController.h>
 #import <WHKit/UIScrollView+WHScrollView.h>
 #import <WHKit/UITableView+WHTableView.h>
