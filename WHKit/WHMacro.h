@@ -6,7 +6,7 @@
 //  Copyright © 2017年 remember17. All rights reserved.
 //  
 
-static inline UIWindow* wh_currentWindow() {
+static inline UIWindow* wh_currentWindow(void) {
     UIWindow* window = nil;
     if ([UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)]) {
         window = UIApplication.sharedApplication.delegate.window;
@@ -30,7 +30,7 @@ static inline UIWindow* wh_currentWindow() {
     return window;
 }
 
-static inline BOOL isIphoneX() {
+static inline BOOL isIphoneX(void) {
     BOOL result = NO;
     if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
         return result;
@@ -41,10 +41,16 @@ static inline BOOL isIphoneX() {
     return result;
 }
 
-static inline CGFloat wh_statusBarHeight() {
+static inline CGFloat wh_statusBarHeight(void) {
     CGFloat statusBarHeight = 0;
     if (@available(iOS 13.0, *)) {
-        statusBarHeight = wh_currentWindow().windowScene.statusBarManager.statusBarFrame.size.height;
+        for (UIScene* aScene in [[UIApplication sharedApplication].connectedScenes allObjects]) {
+            if ([aScene isKindOfClass:UIWindowScene.class]) {
+                UIWindowScene* windowScene = (UIWindowScene *)aScene;
+                statusBarHeight = windowScene.statusBarManager.statusBarFrame.size.height;
+                break;
+            }
+        }
     } else {
         statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
     }
