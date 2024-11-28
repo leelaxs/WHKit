@@ -15,7 +15,7 @@ static inline UIWindow* wh_currentWindow(void) {
         if (@available(iOS 13.0, *)) {
             for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
                 if (windowScene.activationState == UISceneActivationStateForegroundActive ||
-                    windowScene.activationState == UISceneActivationStateUnattached) {
+                    windowScene.activationState == UISceneActivationStateForegroundInactive) {
                     window = windowScene.windows.firstObject;
                     break;
                 }
@@ -47,8 +47,11 @@ static inline CGFloat wh_statusBarHeight(void) {
         for (UIScene* aScene in [[UIApplication sharedApplication].connectedScenes allObjects]) {
             if ([aScene isKindOfClass:UIWindowScene.class]) {
                 UIWindowScene* windowScene = (UIWindowScene *)aScene;
-                statusBarHeight = windowScene.statusBarManager.statusBarFrame.size.height;
-                break;
+                if (windowScene.activationState == UISceneActivationStateForegroundActive ||
+                    windowScene.activationState == UISceneActivationStateForegroundInactive) {
+                    statusBarHeight = windowScene.statusBarManager.statusBarFrame.size.height;
+                    break;
+                }
             }
         }
     } else {
