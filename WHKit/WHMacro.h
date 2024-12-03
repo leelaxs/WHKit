@@ -6,6 +6,8 @@
 //  Copyright © 2017年 remember17. All rights reserved.
 //  
 
+#import <CarPlay/CarPlay.h>
+
 static inline UIWindow* wh_currentWindow(void) {
     UIWindow* window = nil;
     if ([UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)]) {
@@ -13,15 +15,23 @@ static inline UIWindow* wh_currentWindow(void) {
     }
     if (!window) {
         if (@available(iOS 13.0, *)) {
-            for (UIScene* aScene in [[UIApplication sharedApplication].connectedScenes allObjects]) {
-                if ([aScene isMemberOfClass:[UIWindowScene class]]) {
-                    NSLog(@"addddddd====%@",aScene);
-                    UIWindowScene* windowScene = (UIWindowScene *)aScene;
-                    if (windowScene.activationState == UISceneActivationStateForegroundActive ||
-                        windowScene.activationState == UISceneActivationStateForegroundInactive) {
-                        window = windowScene.windows.firstObject;
-                        break;
-                    }
+            for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
+                NSLog(@"ddddd====000");
+                NSString *sdd = NSStringFromClass([windowScene class]);
+                NSLog(@"ddddd====111");
+                NSString *fdd = NSStringFromClass([CPTemplateApplicationScene class]);
+                NSLog(@"ddddd====222");
+                if ([sdd isEqualToString:fdd]){
+                    NSLog(@"ddddd====333");
+                    continue;
+                }
+                NSLog(@"ddddd====444");
+                if (windowScene.activationState == UISceneActivationStateForegroundActive ||
+                    windowScene.activationState == UISceneActivationStateForegroundInactive) {
+                    NSLog(@"ddddd====555");
+                    window = windowScene.windows.firstObject;
+                    NSLog(@"ddddd====666 -- %@",windowScene);
+                    break;
                 }
             }
         } else {
