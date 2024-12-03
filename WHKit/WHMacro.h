@@ -6,8 +6,6 @@
 //  Copyright © 2017年 remember17. All rights reserved.
 //  
 
-#import <CarPlay/CarPlay.h>
-
 static inline UIWindow* wh_currentWindow(void) {
     UIWindow* window = nil;
     if ([UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)]) {
@@ -16,17 +14,10 @@ static inline UIWindow* wh_currentWindow(void) {
     if (!window) {
         if (@available(iOS 13.0, *)) {
             for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
-                NSLog(@"ddddd====000");
-                if (![windowScene isMemberOfClass:[UIWindowScene class]]){
-                    NSLog(@"ddddd====111");
-                    continue;
-                }
-                NSLog(@"ddddd====222");
+                if (![windowScene isMemberOfClass:[UIWindowScene class]]) continue;
                 if (windowScene.activationState == UISceneActivationStateForegroundActive ||
                     windowScene.activationState == UISceneActivationStateForegroundInactive) {
-                    NSLog(@"ddddd====333");
                     window = windowScene.windows.firstObject;
-                    NSLog(@"ddddd====444 -- %@",windowScene);
                     break;
                 }
             }
