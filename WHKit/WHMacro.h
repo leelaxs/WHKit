@@ -17,20 +17,16 @@ static inline UIWindow* wh_currentWindow(void) {
         if (@available(iOS 13.0, *)) {
             for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
                 NSLog(@"ddddd====000");
-                NSString *sdd = NSStringFromClass([windowScene class]);
-                NSLog(@"ddddd====111");
-                NSString *fdd = NSStringFromClass([CPTemplateApplicationScene class]);
-                NSLog(@"ddddd====222");
-                if ([sdd isEqualToString:fdd]){
-                    NSLog(@"ddddd====333");
+                if (![windowScene isMemberOfClass:[UIWindowScene class]]){
+                    NSLog(@"ddddd====111");
                     continue;
                 }
-                NSLog(@"ddddd====444");
+                NSLog(@"ddddd====222");
                 if (windowScene.activationState == UISceneActivationStateForegroundActive ||
                     windowScene.activationState == UISceneActivationStateForegroundInactive) {
-                    NSLog(@"ddddd====555");
+                    NSLog(@"ddddd====333");
                     window = windowScene.windows.firstObject;
-                    NSLog(@"ddddd====666 -- %@",windowScene);
+                    NSLog(@"ddddd====444 -- %@",windowScene);
                     break;
                 }
             }
