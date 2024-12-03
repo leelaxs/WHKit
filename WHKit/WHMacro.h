@@ -14,7 +14,7 @@ static inline UIWindow* wh_currentWindow(void) {
     if (!window) {
         if (@available(iOS 13.0, *)) {
             for (UIScene* aScene in [UIApplication sharedApplication].connectedScenes) {
-                if ([aScene isKindOfClass:UIWindowScene.class]) {
+                if ([aScene isMemberOfClass:UIWindowScene.class]) {
                     UIWindowScene* windowScene = (UIWindowScene *)aScene;
                     if (windowScene.activationState == UISceneActivationStateForegroundActive ||
                         windowScene.activationState == UISceneActivationStateForegroundInactive) {
@@ -48,7 +48,7 @@ static inline CGFloat wh_statusBarHeight(void) {
     CGFloat statusBarHeight = 0;
     if (@available(iOS 13.0, *)) {
         for (UIScene* aScene in [[UIApplication sharedApplication].connectedScenes allObjects]) {
-            if ([aScene isKindOfClass:UIWindowScene.class]) {
+            if ([aScene isMemberOfClass:UIWindowScene.class]) {
                 UIWindowScene* windowScene = (UIWindowScene *)aScene;
                 if (windowScene.activationState == UISceneActivationStateForegroundActive ||
                     windowScene.activationState == UISceneActivationStateForegroundInactive) {
