@@ -13,11 +13,14 @@ static inline UIWindow* wh_currentWindow(void) {
     }
     if (!window) {
         if (@available(iOS 13.0, *)) {
-            for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
-                if (windowScene.activationState == UISceneActivationStateForegroundActive ||
-                    windowScene.activationState == UISceneActivationStateForegroundInactive) {
-                    window = windowScene.windows.firstObject;
-                    break;
+            for (UIScene* aScene in [UIApplication sharedApplication].connectedScenes) {
+                if ([aScene isKindOfClass:UIWindowScene.class]) {
+                    UIWindowScene* windowScene = (UIWindowScene *)aScene;
+                    if (windowScene.activationState == UISceneActivationStateForegroundActive ||
+                        windowScene.activationState == UISceneActivationStateForegroundInactive) {
+                        window = windowScene.windows.firstObject;
+                        break;
+                    }
                 }
             }
         } else {
