@@ -56,6 +56,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CALayer *)wh_gradientLayer:(CGRect)rect
                         color:(NSArray <UIColor *>*)colors
+                     location:(NSArray <NSNumber *> *)locations
+                    direction:(WHGradientLayerDirection)direction
+                        index:(NSInteger)index
+                 cornerRadius:(CGFloat)cornerRadius;
+
+- (CALayer *)wh_gradientLayer:(CGRect)rect
+                        color:(NSArray <UIColor *>*)colors
                    startPoint:(CGPoint)startPoint
                      endPoint:(CGPoint)endPoint
                      location:(NSArray <NSNumber *> *)locations

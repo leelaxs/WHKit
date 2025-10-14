@@ -8,23 +8,24 @@
 
 static inline UIWindow* wh_currentWindow(void) {
     UIWindow* window = nil;
-    if (@available(iOS 13.0, *)) {
-        for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
-            if (![windowScene isMemberOfClass:[UIWindowScene class]]) continue;
-            if (windowScene.activationState == UISceneActivationStateForegroundActive ||
-                windowScene.activationState == UISceneActivationStateForegroundInactive) {
-                window = windowScene.windows.firstObject;
-                break;
+    if ([UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)]) {
+        window = UIApplication.sharedApplication.delegate.window;
+    }
+    if (!window) {
+        if (@available(iOS 13.0, *)) {
+            for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes) {
+                if (windowScene.activationState == UISceneActivationStateForegroundActive ||
+                    windowScene.activationState == UISceneActivationStateUnattached) {
+                    window = windowScene.windows.firstObject;
+                    break;
+                }
             }
-        }
-    } else {
+        } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        window = [UIApplication sharedApplication].keyWindow;
+            window = [UIApplication sharedApplication].keyWindow;
 #pragma clang diagnostic pop
-    }
-    if (!window && [UIApplication.sharedApplication.delegate respondsToSelector:@selector(window)]) {
-        window = UIApplication.sharedApplication.delegate.window;
+        }
     }
     return window;
 }
@@ -43,15 +44,7 @@ static inline BOOL isIphoneX(void) {
 static inline CGFloat wh_statusBarHeight(void) {
     CGFloat statusBarHeight = 0;
     if (@available(iOS 13.0, *)) {
-        for (UIScene* aScene in [[UIApplication sharedApplication].connectedScenes allObjects]) {
-            if (![aScene isMemberOfClass:[UIWindowScene class]]) continue;
-            UIWindowScene* windowScene = (UIWindowScene *)aScene;
-            if (windowScene.activationState == UISceneActivationStateForegroundActive ||
-                windowScene.activationState == UISceneActivationStateForegroundInactive) {
-                statusBarHeight = windowScene.statusBarManager.statusBarFrame.size.height;
-                break;
-            }
-        }
+        statusBarHeight = wh_currentWindow().windowScene.statusBarManager.statusBarFrame.size.height;
     } else {
         statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
     }

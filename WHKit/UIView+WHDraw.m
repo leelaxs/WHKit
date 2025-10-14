@@ -323,4 +323,52 @@
     [self.layer addSublayer:shapeLayer];
     return shapeLayer;
 }
+
+- (CALayer *)wh_gradientLayer:(CGRect)rect
+                        color:(NSArray <UIColor *>*)colors
+                     location:(NSArray <NSNumber *> *)locations
+                    direction:(WHGradientLayerDirection)direction
+                        index:(NSInteger)index
+                 cornerRadius:(CGFloat)cornerRadius
+{
+    if (colors.count == 0) {
+        return nil;
+    }
+    
+    CAGradientLayer *layer = [CAGradientLayer layer];
+    layer.frame = rect;
+    layer.locations = locations;
+    layer.colors = ({
+        NSMutableArray *marr = @[].mutableCopy;
+        for (UIColor *color in colors) {
+            if ([color isKindOfClass:[UIColor class]]) {
+                [marr addObject:(__bridge id)color.CGColor];
+            }
+        }
+        marr;
+    });
+    
+    if (direction == WHGradientLayerDirection_FromLeftToRight) {
+        layer.startPoint = CGPointMake(0, 0);
+        layer.endPoint   = CGPointMake(1, 0);
+    }else if (direction == WHGradientLayerDirection_FromTopToBottom) {
+        layer.startPoint = CGPointMake(0, 0);
+        layer.endPoint   = CGPointMake(0, 1);
+    }else if (direction == WHGradientLayerDirection_FromTopLeftToBottomRight) {
+        layer.startPoint = CGPointMake(0, 0);
+        layer.endPoint   = CGPointMake(1, 1);
+    }else if (direction == WHGradientLayerDirection_FromTopRightToBottomLeft) {
+        layer.startPoint = CGPointMake(1, 0);
+        layer.endPoint   = CGPointMake(0, 1);
+    }else if (direction == WHGradientLayerDirection_FromCenterToEdge) {
+        layer.startPoint = CGPointMake(0.5, 0.5);
+        layer.endPoint   = CGPointMake(1, 1);
+        layer.type = kCAGradientLayerRadial;
+    }
+    layer.cornerRadius = cornerRadius;
+    
+    [self.layer insertSublayer:layer atIndex:(unsigned int)index];
+    return layer;
+}
+
 @end
