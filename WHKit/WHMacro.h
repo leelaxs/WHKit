@@ -149,7 +149,7 @@ static inline CGFloat wh_navigationBarHeight(void) {
 /// TabBar高度
 #define kTabBarHeight (kIs_iPhoneX ? 83 : 49)
 /// 底部安全区域远离高度
-#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX ? wh_safeAreaInsets().bottom : 0)
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX ? 34.0 : 0)
 ///状态栏真实高度
 #define kStatusBarRealHeight (kIs_iPhoneX ? kNavBarHeight : 20.0)
 
