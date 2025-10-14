@@ -7,69 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02D176D7D3E983D589B4C51485D693D6 /* UIView+WHDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 90554C6D22C063301E7DE9895BAEA64F /* UIView+WHDraw.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		055EC4ED7200518AC081D68A530CEAE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		10085F74402DDD5045BE2DE48CD83DAE /* NSObject+WHRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C1E5B57B4EDAC5A7C99CCDA1C2E7B /* NSObject+WHRuntime.m */; };
-		172F3635EA472448DFDAE4A8B25BBA76 /* WHKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE10A4A43BD8E7DB61D1A297059DDA /* WHKit-dummy.m */; };
-		220FA0B8AEB54694FE23DCC2221E9C28 /* UIAlertController+WHAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8262CC70E141C62796E9E8C57FE0B1 /* UIAlertController+WHAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26892B7251F74FC260A7F0535766BC72 /* WHKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C84E79219EA63F7E59EC754592C02709 /* WHKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26D6778BC683F42A5B3757102FC1AD1A /* UIImage+WHImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BA75497D0EBE1D4E7865CADAA2F0DD /* UIImage+WHImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A4426464FF160E13A5EF2D29AB891FC /* NSDictionary+WHDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD148FF4D63C693D3292041C7C1C19 /* NSDictionary+WHDictionary.m */; };
-		2B82E25555B58A0F36BFCE37F873B469 /* WHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D592C44FF7A6CDBB1004F8EDC481F12 /* WHMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F0191315026E5418CEBF5C558FC55FF /* WHSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = D6400E41A88D67ED48A976044CA0DB87 /* WHSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3340FC928FF86BAC9958A8F33594C232 /* UIColor+WHColor.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DF72D2C647A517F1D53FEC8AF19789 /* UIColor+WHColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		364C66A4F37F68017AF4009CEE8E31CC /* UINavigationController+WHNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = B49E5817BE3E362C865A793F828E9FFF /* UINavigationController+WHNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		382953AB72F6DB88BD75D6569DDB9FC6 /* CALayer+WHLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE6D6F4F4142F559E13ED2EA1114059 /* CALayer+WHLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39C362B48554A3693B16C3E24858F33B /* NSDate+WHDate.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4B5D281762FAF0EB2E714FA6A8C13D /* NSDate+WHDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		431DA7D99F7F6B905AA24AABFDC7D0D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		4477ECBD502E3EB2501011AA05C4C9B5 /* UIView+WHDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8AE3B28BCB27D56A2ED68CED918704 /* UIView+WHDraw.m */; };
-		4F23EF2AD7761A8F5FBB82510E79B59A /* UIAlertController+WHAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B5CCFC432CB3667426DF6EAB790C9 /* UIAlertController+WHAlert.m */; };
-		59AC0C3B5F441C94E053EB8DC0FD829D /* UIBarButtonItem+WHBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F00BE29CED9C3435BCB82824DF8A8CA6 /* UIBarButtonItem+WHBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A86DEED2E5C7666CD86CA0DEC95D026 /* UIButton+WHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBA5C484BE915B676FB5F01563E1AB4 /* UIButton+WHButton.m */; };
-		6E4E05408252F5068621669B1F9C5782 /* NSDictionary+WHDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 62882D171881538F6433D9FD5D3938CF /* NSDictionary+WHDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7190FD996CB4B9CCE7D86900372FB60B /* NSString+WHString.h in Headers */ = {isa = PBXBuildFile; fileRef = 047F9E6D20104E4097C34C9B27EDAA26 /* NSString+WHString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72C5476C4473487D15249805C2DC7B33 /* UIDevice+WHDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = DE82CBDF677456C3F673FD726C21B70C /* UIDevice+WHDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		742B87DA70574D0F69A5FEFCE6483696 /* WHMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = E20A12DF880761A507AFF90892073B66 /* WHMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		765FC8CEE0FE76D298F2C227116BD070 /* UIViewController+WHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 966377A50BF6522825B591F37376150A /* UIViewController+WHVC.m */; };
-		76AC7BFCEFD2A112EA83073CE1515A65 /* NSObject+WHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ED791D21B2C5ACB188524D06118B35 /* NSObject+WHObject.m */; };
-		779A799F1C856205A523F4F61DFBD58C /* NSObject+WHRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F04D687CDFBD03E8285DEF7BF45F33 /* NSObject+WHRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77D7B4C9EA923604123F4A7B70826D06 /* SerializeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF07BDE4770CB3820A831899BDBC31E /* SerializeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D9127D6B8B342586C436C5BFB5364DF /* NSDate+WHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B79B159433DF54B66642613045228A8 /* NSDate+WHDate.m */; };
-		8402048E9C5B6BD2FBDEEB84DDA62E7E /* UITableView+WHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCDBA13F310B0B85F4D1C87392334E1 /* UITableView+WHTableView.m */; };
-		861B4774CA687E74C8225608029EB942 /* UIScrollView+WHScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7963D78E48E3BA177320F1C202ABE5E /* UIScrollView+WHScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8772A71D488547D20ADD22B2DA6BFF1A /* Pods-WHKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E391DDEC0ECB0C4EAA5C11EE16A21EE9 /* Pods-WHKitDemo-dummy.m */; };
-		8BB8866B5ED0240A1FF4614099FEFE32 /* UIBarButtonItem+WHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F0479A71752CBC37FE58BCB019DD4EB7 /* UIBarButtonItem+WHBarButtonItem.m */; };
-		9003855236F64D7BEE993E0B1B63697B /* UIColor+WHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE7E566ACBAD42FA154FBD4F521040 /* UIColor+WHColor.m */; };
-		91AB510EBD2F30799218864BB5F19B56 /* UIView+WHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE13614621142759E49508E1A30534 /* UIView+WHView.m */; };
-		98903DACEF3A4CE874D2E6996D84C02A /* UIDevice+WHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F744B18B2ACF7E4A9FC6A8C35DEB0F /* UIDevice+WHDevice.m */; };
-		9B1C27C60FBDFC09BF9AB9A326AB030B /* NSFileManager+WHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 220A07217BAF0386ED8C7D1353B3F8D5 /* NSFileManager+WHFileManager.m */; };
-		9F4791CACB94AC488F77D4265A58BF99 /* Foundation+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A6BDD6CF1C0EA23C4ADDE17058C26D /* Foundation+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4A480A28B970B9BDE2666060EFA2DEC /* NSArray+WHArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 285B5C85C976DB990CE62199500484ED /* NSArray+WHArray.m */; };
-		AF0D2081F6E0C2F4E93519882E2678DA /* UIViewController+WHVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B020ECC2D069B46BF6AA3E5954D4DD17 /* UIViewController+WHVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0E53E788D9455BBE8A128273CD66A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		B15034EF8CC80ACEB451F20A96DC72FE /* NSFileManager+WHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 883FE3D7A8C476C5291487CD35774111 /* NSFileManager+WHFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B599836EC724FA47645F01AFF68C4778 /* NSObject+WHObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1146CB693FCC90D254939827BE3108D4 /* NSObject+WHObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7DA87E533A6E027B240A40CF46B4332 /* NSArray+WHArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C99706BF1357F56F436FDA0B1F650BB /* NSArray+WHArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB6585721BA91A0C01E72CC3DB6CCC9B /* NSNumber+WHNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0999E770E6D03E99E5C865C8AA266605 /* NSNumber+WHNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2A78C6CC0D09682270B503A50757F93 /* UIScrollView+WHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B21E553DC98CB51FCAB65DF2AA3811A /* UIScrollView+WHScrollView.m */; };
-		CAA0D742CAC5DEF313BD3A9D8B365CEF /* WHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6947C71F76AEA5BBD470AD8FFD4C0D3A /* WHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB6567B6C770E09F47CE5DC1C2A90278 /* NSTimer+WHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0553E143AE843F69FCA832F0D8D67C0 /* NSTimer+WHTimer.m */; };
-		D17B8FC14497BEE7E4007E66C515C3D4 /* WHMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA8765DFC5842144B913CCE5F0840 /* WHMethods.m */; };
-		D7F498A74BE12302D59B28AA41F87AC4 /* UIImage+WHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 055708A08F91567465247F3BCC781A27 /* UIImage+WHImage.m */; };
-		E1FAAFEA539EA64A3691316A46AEF409 /* UIButton+WHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C15F779DA8E3F9CBCD71BA05D56F8429 /* UIButton+WHButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2F0BCCFA4471F04C4D4C0FDFA10B106 /* NSString+WHString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117D45F7F745E116C768D87E6F73910 /* NSString+WHString.m */; };
-		E40FE13ED7AA752F9EA47716B6AD03CD /* UITableView+WHTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB090DF4A6344AB664F95B809BBEE16 /* UITableView+WHTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E498DD832C202F5BD2ACCFF2A004EA83 /* Pods-WHKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67585F1A0155DF74F3E06DF1BED6BF3E /* Pods-WHKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E62998B1C91FFD4D80E4AE7EFC05BAF9 /* Foundation+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B9AD417A086EFC1E802FBC499860E2 /* Foundation+Safe.m */; };
-		E761265CD28A820E30C03520956C2087 /* UIView+WHView.h in Headers */ = {isa = PBXBuildFile; fileRef = 702DBF2DB01F3BA401E68786285D805C /* UIView+WHView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F12480338BFB8BA7AD7AAF255CD4FE96 /* UINavigationController+WHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B7DBD6D4D45908C9E5140F252D23D /* UINavigationController+WHNavigationController.m */; };
-		F5022009332C4950562E9C41C5BFA1FE /* NSNumber+WHNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC916C9FE30D613B8F70A1141CBD5619 /* NSNumber+WHNumber.m */; };
-		FB5879AF1CFBDC422539CE106A40876A /* NSTimer+WHTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5A274B194E9FAD3813E21401C1106D /* NSTimer+WHTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE06315AEAFC25F1B6E294A394689B91 /* CALayer+WHLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A9C2D9FEA63912473E1C74E65D477 /* CALayer+WHLayer.m */; };
+		01058446695B0A27E8C86D7956B5BCDE /* NSObject+WHObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1146CB693FCC90D254939827BE3108D4 /* NSObject+WHObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D00BF15E5146D7F56405AD845851C49 /* NSString+WHString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117D45F7F745E116C768D87E6F73910 /* NSString+WHString.m */; };
+		101508075FB619AE42BD7553F057DD47 /* UIView+WHDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8AE3B28BCB27D56A2ED68CED918704 /* UIView+WHDraw.m */; };
+		121DEBC6E39CF8CE4196FCA6DCA66778 /* UIButton+WHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C15F779DA8E3F9CBCD71BA05D56F8429 /* UIButton+WHButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135E56547145C228ADE44B432C137C9F /* UINavigationController+WHNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = B49E5817BE3E362C865A793F828E9FFF /* UINavigationController+WHNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174BE26592A9E4C1CF05C0969816263A /* NSObject+WHRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F04D687CDFBD03E8285DEF7BF45F33 /* NSObject+WHRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		178A88CD0A185C29EB19FBD67B8E5C60 /* NSArray+WHArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 285B5C85C976DB990CE62199500484ED /* NSArray+WHArray.m */; };
+		18247E1F060588A2871E2476AC6F0802 /* NSArray+WHArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C99706BF1357F56F436FDA0B1F650BB /* NSArray+WHArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A33EB1AE7222D0149489EA7336B75D2 /* NSTimer+WHTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5A274B194E9FAD3813E21401C1106D /* NSTimer+WHTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DDF6A32D2599EAF801D535E74A36411 /* WHMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = E20A12DF880761A507AFF90892073B66 /* WHMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F07A099AA1FC086C26811A1D295BB62 /* Pods-WHKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67585F1A0155DF74F3E06DF1BED6BF3E /* Pods-WHKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FEE17BA8D1BAEC89FCFB74B9B6F38E4 /* NSTimer+WHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0553E143AE843F69FCA832F0D8D67C0 /* NSTimer+WHTimer.m */; };
+		2800DF9BD7915DF37AF2B2A4A1603C2F /* NSFileManager+WHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 220A07217BAF0386ED8C7D1353B3F8D5 /* NSFileManager+WHFileManager.m */; };
+		29E59BD5C12615E6E1DEA8D09800E8D5 /* UIViewController+WHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 966377A50BF6522825B591F37376150A /* UIViewController+WHVC.m */; };
+		387F6176A810F799C54AE264ABD1DD60 /* WHSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = D6400E41A88D67ED48A976044CA0DB87 /* WHSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		397651BB8D5541F253D7CCE63E0CD92F /* UIViewController+WHVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B020ECC2D069B46BF6AA3E5954D4DD17 /* UIViewController+WHVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE56D1EF57F15D636688F56E348FCC1 /* CALayer+WHLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A9C2D9FEA63912473E1C74E65D477 /* CALayer+WHLayer.m */; };
+		405E15B0825FE977DBA6197EB9F4A20A /* Foundation+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B9AD417A086EFC1E802FBC499860E2 /* Foundation+Safe.m */; };
+		4183E697643EC7AF5424E70DB6A496AD /* UIImage+WHImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BA75497D0EBE1D4E7865CADAA2F0DD /* UIImage+WHImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52DE50F56819A7A8C410AF88429D6362 /* UITableView+WHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCDBA13F310B0B85F4D1C87392334E1 /* UITableView+WHTableView.m */; };
+		5358E5E2582E1F8D3EBE8FE965244E77 /* WHKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE10A4A43BD8E7DB61D1A297059DDA /* WHKit-dummy.m */; };
+		54C4FB98A0BFBC33BFDDCDEFDD0C9749 /* UINavigationController+WHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B7DBD6D4D45908C9E5140F252D23D /* UINavigationController+WHNavigationController.m */; };
+		54ECAB5F5DFD76D8FD0039BDC8C91DD2 /* Foundation+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A6BDD6CF1C0EA23C4ADDE17058C26D /* Foundation+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		569F71EE188D4A2C85080F102CD20DF6 /* UIView+WHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE13614621142759E49508E1A30534 /* UIView+WHView.m */; };
+		56EAB61AC90E316DD5F898801DE9D555 /* UIScrollView+WHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B21E553DC98CB51FCAB65DF2AA3811A /* UIScrollView+WHScrollView.m */; };
+		58B99DAD1426AB677A4C5156CAD3355F /* NSString+WHString.h in Headers */ = {isa = PBXBuildFile; fileRef = 047F9E6D20104E4097C34C9B27EDAA26 /* NSString+WHString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6271D4CD97E1811E87928E34CFD80B73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		6381AC68CB5EB5C4EFACCD07E236B22D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		6B58335957564866A3B2FB4E840C77EF /* NSObject+WHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ED791D21B2C5ACB188524D06118B35 /* NSObject+WHObject.m */; };
+		6C1C4738A9B2080C6B4109078468478B /* NSDate+WHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B79B159433DF54B66642613045228A8 /* NSDate+WHDate.m */; };
+		6C83D298723AC17ECEE923D5B7B6AD18 /* WHKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C84E79219EA63F7E59EC754592C02709 /* WHKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DCBFB4D4E59497F6BCEC27AE32C05DD /* UIBarButtonItem+WHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F0479A71752CBC37FE58BCB019DD4EB7 /* UIBarButtonItem+WHBarButtonItem.m */; };
+		6EDA4FE30A0A521845283A1F60F4E4B5 /* UIView+WHView.h in Headers */ = {isa = PBXBuildFile; fileRef = 702DBF2DB01F3BA401E68786285D805C /* UIView+WHView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757425C157B6C6167DB7793F4126CD74 /* UIScrollView+WHScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7963D78E48E3BA177320F1C202ABE5E /* UIScrollView+WHScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A9A6A35DFDFCA3A497D0CA94853EFE /* UIAlertController+WHAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8262CC70E141C62796E9E8C57FE0B1 /* UIAlertController+WHAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A1D64D419E81974BCB97572980A8E6B /* UIDevice+WHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F744B18B2ACF7E4A9FC6A8C35DEB0F /* UIDevice+WHDevice.m */; };
+		8B259A9993AEB92867B6D39ECFAF2B44 /* WHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D592C44FF7A6CDBB1004F8EDC481F12 /* WHMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BB2172CECE2446F79953603B75E1CFF /* WHMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA8765DFC5842144B913CCE5F0840 /* WHMethods.m */; };
+		8CF7FE70F7B4C2D5BD20EF4D86E0B517 /* UIView+WHDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 90554C6D22C063301E7DE9895BAEA64F /* UIView+WHDraw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D986254C3022AC84587DAA626544FEB /* NSDate+WHDate.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4B5D281762FAF0EB2E714FA6A8C13D /* NSDate+WHDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		919357A7E5DD6BA571A764DC2D75555A /* CALayer+WHLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE6D6F4F4142F559E13ED2EA1114059 /* CALayer+WHLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D2CB3CF2BCE075EE46D8F3C2ABDEB19 /* UIDevice+WHDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = DE82CBDF677456C3F673FD726C21B70C /* UIDevice+WHDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A22F5A3F07708466F3F328C4BEEB69C3 /* NSObject+WHRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C1E5B57B4EDAC5A7C99CCDA1C2E7B /* NSObject+WHRuntime.m */; };
+		A4DD8088D43381B47F12415C4AC34557 /* UIAlertController+WHAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B5CCFC432CB3667426DF6EAB790C9 /* UIAlertController+WHAlert.m */; };
+		AB141F2D3E6AAEB085DAC31C03D0546F /* UIButton+WHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBA5C484BE915B676FB5F01563E1AB4 /* UIButton+WHButton.m */; };
+		ABA3C606656E39E999FB4CB7F201D30A /* UITableView+WHTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB090DF4A6344AB664F95B809BBEE16 /* UITableView+WHTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8A84D0413680FAEF5A1AE03B809A74E /* UIColor+WHColor.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DF72D2C647A517F1D53FEC8AF19789 /* UIColor+WHColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B98492444A0CED1267EFD0477FCE9440 /* WHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6947C71F76AEA5BBD470AD8FFD4C0D3A /* WHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD29DC779AA487C39BEE75AF2C8A2A28 /* UIColor+WHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE7E566ACBAD42FA154FBD4F521040 /* UIColor+WHColor.m */; };
+		C71C73E7D86668C345539B80054B5E1A /* UIImage+WHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 055708A08F91567465247F3BCC781A27 /* UIImage+WHImage.m */; };
+		C745F3730DACA77250882FF9440148AF /* NSNumber+WHNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0999E770E6D03E99E5C865C8AA266605 /* NSNumber+WHNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6CF5265ED5E31D9076898CB01EDAEA /* Pods-WHKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E391DDEC0ECB0C4EAA5C11EE16A21EE9 /* Pods-WHKitDemo-dummy.m */; };
+		CF2F62135AC29A2532D4CBC5A1E266E3 /* NSFileManager+WHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 883FE3D7A8C476C5291487CD35774111 /* NSFileManager+WHFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA31F44296DFDE0942062E972A8FA7FD /* UIBarButtonItem+WHBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F00BE29CED9C3435BCB82824DF8A8CA6 /* UIBarButtonItem+WHBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F68339C8C091B61050E3CBDCF4707AAD /* SerializeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF07BDE4770CB3820A831899BDBC31E /* SerializeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F79CC9782EE100307D23FEF0D80A4F7D /* NSDictionary+WHDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD148FF4D63C693D3292041C7C1C19 /* NSDictionary+WHDictionary.m */; };
+		FC001311A7F8817D3443D3789FAF0D82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		FD7A403360502D0C1CD84E19D091520D /* NSDictionary+WHDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 62882D171881538F6433D9FD5D3938CF /* NSDictionary+WHDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDA064506D87F07F0384764889665523 /* NSNumber+WHNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC916C9FE30D613B8F70A1141CBD5619 /* NSNumber+WHNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		58D1564A0A46CA15B96518391B8C9173 /* PBXContainerItemProxy */ = {
+		1252EA5385A01D54E5AD744BD5689CDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -115,6 +115,7 @@
 		7B21E553DC98CB51FCAB65DF2AA3811A /* UIScrollView+WHScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+WHScrollView.m"; path = "WHKit/UIScrollView+WHScrollView.m"; sourceTree = "<group>"; };
 		7FEE10A4A43BD8E7DB61D1A297059DDA /* WHKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHKit-dummy.m"; sourceTree = "<group>"; };
 		8117D45F7F745E116C768D87E6F73910 /* NSString+WHString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+WHString.m"; path = "WHKit/NSString+WHString.m"; sourceTree = "<group>"; };
+		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		883FE3D7A8C476C5291487CD35774111 /* NSFileManager+WHFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+WHFileManager.h"; path = "WHKit/NSFileManager+WHFileManager.h"; sourceTree = "<group>"; };
 		8ADE7E566ACBAD42FA154FBD4F521040 /* UIColor+WHColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+WHColor.m"; path = "WHKit/UIColor+WHColor.m"; sourceTree = "<group>"; };
 		8C080EB20EC4B368E88967FB7D12EDAB /* WHKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WHKit-Info.plist"; sourceTree = "<group>"; };
@@ -142,7 +143,6 @@
 		C84E79219EA63F7E59EC754592C02709 /* WHKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHKit-umbrella.h"; sourceTree = "<group>"; };
 		CA8AE3B28BCB27D56A2ED68CED918704 /* UIView+WHDraw.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WHDraw.m"; path = "WHKit/UIView+WHDraw.m"; sourceTree = "<group>"; };
 		D0553E143AE843F69FCA832F0D8D67C0 /* NSTimer+WHTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+WHTimer.m"; path = "WHKit/NSTimer+WHTimer.m"; sourceTree = "<group>"; };
-		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D4BBD2B6BAF195CACB2B2718731CEB4C /* Pods-WHKitDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WHKitDemo"; path = Pods_WHKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6400E41A88D67ED48A976044CA0DB87 /* WHSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHSingleton.h; path = WHKit/WHSingleton.h; sourceTree = "<group>"; };
 		D70B45D02B91731C1453A848715E4213 /* Pods-WHKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WHKitDemo.modulemap"; sourceTree = "<group>"; };
@@ -151,27 +151,27 @@
 		E1F04D687CDFBD03E8285DEF7BF45F33 /* NSObject+WHRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+WHRuntime.h"; path = "WHKit/NSObject+WHRuntime.h"; sourceTree = "<group>"; };
 		E20A12DF880761A507AFF90892073B66 /* WHMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WHMethods.h; path = WHKit/WHMethods.h; sourceTree = "<group>"; };
 		E391DDEC0ECB0C4EAA5C11EE16A21EE9 /* Pods-WHKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHKitDemo-dummy.m"; sourceTree = "<group>"; };
-		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EF4B5D281762FAF0EB2E714FA6A8C13D /* NSDate+WHDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+WHDate.h"; path = "WHKit/NSDate+WHDate.h"; sourceTree = "<group>"; };
 		F00BE29CED9C3435BCB82824DF8A8CA6 /* UIBarButtonItem+WHBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+WHBarButtonItem.h"; path = "WHKit/UIBarButtonItem+WHBarButtonItem.h"; sourceTree = "<group>"; };
 		F0479A71752CBC37FE58BCB019DD4EB7 /* UIBarButtonItem+WHBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+WHBarButtonItem.m"; path = "WHKit/UIBarButtonItem+WHBarButtonItem.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B94E75364AE0C8399EBBC14FA798C57C /* Frameworks */ = {
+		0ADCBB62CB73A074D6DE1FB956097E30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055EC4ED7200518AC081D68A530CEAE2 /* Foundation.framework in Frameworks */,
-				431DA7D99F7F6B905AA24AABFDC7D0D4 /* UIKit.framework in Frameworks */,
+				6381AC68CB5EB5C4EFACCD07E236B22D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4B0F4420394F6E2678F35E793AE92AB /* Frameworks */ = {
+		91902D75568E07B90E5686911F1AD43D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0E53E788D9455BBE8A128273CD66A9A /* Foundation.framework in Frameworks */,
+				FC001311A7F8817D3443D3789FAF0D82 /* Foundation.framework in Frameworks */,
+				6271D4CD97E1811E87928E34CFD80B73 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +196,18 @@
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
+				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		34EB69F8CE6973B09375D021CDA15997 /* WHKit */ = {
@@ -261,15 +270,6 @@
 			);
 			name = WHKit;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
-				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		66B93BA4ED8CAFA8D590F04DBBF937CF /* Pods-WHKitDemo */ = {
@@ -338,47 +338,47 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7F9F96AF75306204D56E31FE2CFBA4DB /* Headers */ = {
+		27AD0CA9C763757CBDFB175BB8036CF2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E498DD832C202F5BD2ACCFF2A004EA83 /* Pods-WHKitDemo-umbrella.h in Headers */,
+				919357A7E5DD6BA571A764DC2D75555A /* CALayer+WHLayer.h in Headers */,
+				54ECAB5F5DFD76D8FD0039BDC8C91DD2 /* Foundation+Safe.h in Headers */,
+				18247E1F060588A2871E2476AC6F0802 /* NSArray+WHArray.h in Headers */,
+				8D986254C3022AC84587DAA626544FEB /* NSDate+WHDate.h in Headers */,
+				FD7A403360502D0C1CD84E19D091520D /* NSDictionary+WHDictionary.h in Headers */,
+				CF2F62135AC29A2532D4CBC5A1E266E3 /* NSFileManager+WHFileManager.h in Headers */,
+				C745F3730DACA77250882FF9440148AF /* NSNumber+WHNumber.h in Headers */,
+				01058446695B0A27E8C86D7956B5BCDE /* NSObject+WHObject.h in Headers */,
+				174BE26592A9E4C1CF05C0969816263A /* NSObject+WHRuntime.h in Headers */,
+				58B99DAD1426AB677A4C5156CAD3355F /* NSString+WHString.h in Headers */,
+				1A33EB1AE7222D0149489EA7336B75D2 /* NSTimer+WHTimer.h in Headers */,
+				F68339C8C091B61050E3CBDCF4707AAD /* SerializeKit.h in Headers */,
+				83A9A6A35DFDFCA3A497D0CA94853EFE /* UIAlertController+WHAlert.h in Headers */,
+				EA31F44296DFDE0942062E972A8FA7FD /* UIBarButtonItem+WHBarButtonItem.h in Headers */,
+				121DEBC6E39CF8CE4196FCA6DCA66778 /* UIButton+WHButton.h in Headers */,
+				B8A84D0413680FAEF5A1AE03B809A74E /* UIColor+WHColor.h in Headers */,
+				9D2CB3CF2BCE075EE46D8F3C2ABDEB19 /* UIDevice+WHDevice.h in Headers */,
+				4183E697643EC7AF5424E70DB6A496AD /* UIImage+WHImage.h in Headers */,
+				135E56547145C228ADE44B432C137C9F /* UINavigationController+WHNavigationController.h in Headers */,
+				757425C157B6C6167DB7793F4126CD74 /* UIScrollView+WHScrollView.h in Headers */,
+				ABA3C606656E39E999FB4CB7F201D30A /* UITableView+WHTableView.h in Headers */,
+				8CF7FE70F7B4C2D5BD20EF4D86E0B517 /* UIView+WHDraw.h in Headers */,
+				6EDA4FE30A0A521845283A1F60F4E4B5 /* UIView+WHView.h in Headers */,
+				397651BB8D5541F253D7CCE63E0CD92F /* UIViewController+WHVC.h in Headers */,
+				B98492444A0CED1267EFD0477FCE9440 /* WHKit.h in Headers */,
+				6C83D298723AC17ECEE923D5B7B6AD18 /* WHKit-umbrella.h in Headers */,
+				8B259A9993AEB92867B6D39ECFAF2B44 /* WHMacro.h in Headers */,
+				1DDF6A32D2599EAF801D535E74A36411 /* WHMethods.h in Headers */,
+				387F6176A810F799C54AE264ABD1DD60 /* WHSingleton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFFEE303D076BFFE09B66B1CFFD9440D /* Headers */ = {
+		A6AA1ECFC30C1543559BFDB4FB461FB8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382953AB72F6DB88BD75D6569DDB9FC6 /* CALayer+WHLayer.h in Headers */,
-				9F4791CACB94AC488F77D4265A58BF99 /* Foundation+Safe.h in Headers */,
-				B7DA87E533A6E027B240A40CF46B4332 /* NSArray+WHArray.h in Headers */,
-				39C362B48554A3693B16C3E24858F33B /* NSDate+WHDate.h in Headers */,
-				6E4E05408252F5068621669B1F9C5782 /* NSDictionary+WHDictionary.h in Headers */,
-				B15034EF8CC80ACEB451F20A96DC72FE /* NSFileManager+WHFileManager.h in Headers */,
-				BB6585721BA91A0C01E72CC3DB6CCC9B /* NSNumber+WHNumber.h in Headers */,
-				B599836EC724FA47645F01AFF68C4778 /* NSObject+WHObject.h in Headers */,
-				779A799F1C856205A523F4F61DFBD58C /* NSObject+WHRuntime.h in Headers */,
-				7190FD996CB4B9CCE7D86900372FB60B /* NSString+WHString.h in Headers */,
-				FB5879AF1CFBDC422539CE106A40876A /* NSTimer+WHTimer.h in Headers */,
-				77D7B4C9EA923604123F4A7B70826D06 /* SerializeKit.h in Headers */,
-				220FA0B8AEB54694FE23DCC2221E9C28 /* UIAlertController+WHAlert.h in Headers */,
-				59AC0C3B5F441C94E053EB8DC0FD829D /* UIBarButtonItem+WHBarButtonItem.h in Headers */,
-				E1FAAFEA539EA64A3691316A46AEF409 /* UIButton+WHButton.h in Headers */,
-				3340FC928FF86BAC9958A8F33594C232 /* UIColor+WHColor.h in Headers */,
-				72C5476C4473487D15249805C2DC7B33 /* UIDevice+WHDevice.h in Headers */,
-				26D6778BC683F42A5B3757102FC1AD1A /* UIImage+WHImage.h in Headers */,
-				364C66A4F37F68017AF4009CEE8E31CC /* UINavigationController+WHNavigationController.h in Headers */,
-				861B4774CA687E74C8225608029EB942 /* UIScrollView+WHScrollView.h in Headers */,
-				E40FE13ED7AA752F9EA47716B6AD03CD /* UITableView+WHTableView.h in Headers */,
-				02D176D7D3E983D589B4C51485D693D6 /* UIView+WHDraw.h in Headers */,
-				E761265CD28A820E30C03520956C2087 /* UIView+WHView.h in Headers */,
-				AF0D2081F6E0C2F4E93519882E2678DA /* UIViewController+WHVC.h in Headers */,
-				CAA0D742CAC5DEF313BD3A9D8B365CEF /* WHKit.h in Headers */,
-				26892B7251F74FC260A7F0535766BC72 /* WHKit-umbrella.h in Headers */,
-				2B82E25555B58A0F36BFCE37F873B469 /* WHMacro.h in Headers */,
-				742B87DA70574D0F69A5FEFCE6483696 /* WHMethods.h in Headers */,
-				2F0191315026E5418CEBF5C558FC55FF /* WHSingleton.h in Headers */,
+				1F07A099AA1FC086C26811A1D295BB62 /* Pods-WHKitDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,12 +387,12 @@
 /* Begin PBXNativeTarget section */
 		54B2CEE4C80D3CF054B0F3ECA55CEBD9 /* WHKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33C9F8CEC9A7F2ADC08F156D80C2891F /* Build configuration list for PBXNativeTarget "WHKit" */;
+			buildConfigurationList = DBFE1A6BF07AFC9330434950F743E06E /* Build configuration list for PBXNativeTarget "WHKit" */;
 			buildPhases = (
-				EFFEE303D076BFFE09B66B1CFFD9440D /* Headers */,
-				25601E5E51BE67FADC0DC4ED19C59AF9 /* Sources */,
-				B94E75364AE0C8399EBBC14FA798C57C /* Frameworks */,
-				C0784E155A1EFD1A3057563F768ED23B /* Resources */,
+				27AD0CA9C763757CBDFB175BB8036CF2 /* Headers */,
+				C835D44710D9E54AEFDBEE7058E7F689 /* Sources */,
+				91902D75568E07B90E5686911F1AD43D /* Frameworks */,
+				F355CF44C1EDFBD36B800DDF72C635B6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -405,17 +405,17 @@
 		};
 		DEC6769217068D68668DBC214189DD6C /* Pods-WHKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC70570D7115644479C955DDF14C1748 /* Build configuration list for PBXNativeTarget "Pods-WHKitDemo" */;
+			buildConfigurationList = 3709ED22595E23A11DA971A2C7E74DF9 /* Build configuration list for PBXNativeTarget "Pods-WHKitDemo" */;
 			buildPhases = (
-				7F9F96AF75306204D56E31FE2CFBA4DB /* Headers */,
-				C7A39214AE1F6B28981B2176003ED297 /* Sources */,
-				D4B0F4420394F6E2678F35E793AE92AB /* Frameworks */,
-				A45E57986E35FDE4CC2967EAF9833FAE /* Resources */,
+				A6AA1ECFC30C1543559BFDB4FB461FB8 /* Headers */,
+				D93189C704792595BEBA3C735D330544 /* Sources */,
+				0ADCBB62CB73A074D6DE1FB956097E30 /* Frameworks */,
+				5B2B91F0754139A630A6494A0C796DEB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				286EC2E8FFBD06869DF37AF6F47276AB /* PBXTargetDependency */,
+				95841177B6522597F2344C58A9A6CACD /* PBXTargetDependency */,
 			);
 			name = "Pods-WHKitDemo";
 			productName = Pods_WHKitDemo;
@@ -428,8 +428,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -440,6 +440,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = A10D4416DE870AEC15AD8710F8C2D7CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -451,14 +453,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A45E57986E35FDE4CC2967EAF9833FAE /* Resources */ = {
+		5B2B91F0754139A630A6494A0C796DEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0784E155A1EFD1A3057563F768ED23B /* Resources */ = {
+		F355CF44C1EDFBD36B800DDF72C635B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -468,54 +470,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25601E5E51BE67FADC0DC4ED19C59AF9 /* Sources */ = {
+		C835D44710D9E54AEFDBEE7058E7F689 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE06315AEAFC25F1B6E294A394689B91 /* CALayer+WHLayer.m in Sources */,
-				E62998B1C91FFD4D80E4AE7EFC05BAF9 /* Foundation+Safe.m in Sources */,
-				A4A480A28B970B9BDE2666060EFA2DEC /* NSArray+WHArray.m in Sources */,
-				7D9127D6B8B342586C436C5BFB5364DF /* NSDate+WHDate.m in Sources */,
-				2A4426464FF160E13A5EF2D29AB891FC /* NSDictionary+WHDictionary.m in Sources */,
-				9B1C27C60FBDFC09BF9AB9A326AB030B /* NSFileManager+WHFileManager.m in Sources */,
-				F5022009332C4950562E9C41C5BFA1FE /* NSNumber+WHNumber.m in Sources */,
-				76AC7BFCEFD2A112EA83073CE1515A65 /* NSObject+WHObject.m in Sources */,
-				10085F74402DDD5045BE2DE48CD83DAE /* NSObject+WHRuntime.m in Sources */,
-				E2F0BCCFA4471F04C4D4C0FDFA10B106 /* NSString+WHString.m in Sources */,
-				CB6567B6C770E09F47CE5DC1C2A90278 /* NSTimer+WHTimer.m in Sources */,
-				4F23EF2AD7761A8F5FBB82510E79B59A /* UIAlertController+WHAlert.m in Sources */,
-				8BB8866B5ED0240A1FF4614099FEFE32 /* UIBarButtonItem+WHBarButtonItem.m in Sources */,
-				6A86DEED2E5C7666CD86CA0DEC95D026 /* UIButton+WHButton.m in Sources */,
-				9003855236F64D7BEE993E0B1B63697B /* UIColor+WHColor.m in Sources */,
-				98903DACEF3A4CE874D2E6996D84C02A /* UIDevice+WHDevice.m in Sources */,
-				D7F498A74BE12302D59B28AA41F87AC4 /* UIImage+WHImage.m in Sources */,
-				F12480338BFB8BA7AD7AAF255CD4FE96 /* UINavigationController+WHNavigationController.m in Sources */,
-				C2A78C6CC0D09682270B503A50757F93 /* UIScrollView+WHScrollView.m in Sources */,
-				8402048E9C5B6BD2FBDEEB84DDA62E7E /* UITableView+WHTableView.m in Sources */,
-				4477ECBD502E3EB2501011AA05C4C9B5 /* UIView+WHDraw.m in Sources */,
-				91AB510EBD2F30799218864BB5F19B56 /* UIView+WHView.m in Sources */,
-				765FC8CEE0FE76D298F2C227116BD070 /* UIViewController+WHVC.m in Sources */,
-				172F3635EA472448DFDAE4A8B25BBA76 /* WHKit-dummy.m in Sources */,
-				D17B8FC14497BEE7E4007E66C515C3D4 /* WHMethods.m in Sources */,
+				3BE56D1EF57F15D636688F56E348FCC1 /* CALayer+WHLayer.m in Sources */,
+				405E15B0825FE977DBA6197EB9F4A20A /* Foundation+Safe.m in Sources */,
+				178A88CD0A185C29EB19FBD67B8E5C60 /* NSArray+WHArray.m in Sources */,
+				6C1C4738A9B2080C6B4109078468478B /* NSDate+WHDate.m in Sources */,
+				F79CC9782EE100307D23FEF0D80A4F7D /* NSDictionary+WHDictionary.m in Sources */,
+				2800DF9BD7915DF37AF2B2A4A1603C2F /* NSFileManager+WHFileManager.m in Sources */,
+				FDA064506D87F07F0384764889665523 /* NSNumber+WHNumber.m in Sources */,
+				6B58335957564866A3B2FB4E840C77EF /* NSObject+WHObject.m in Sources */,
+				A22F5A3F07708466F3F328C4BEEB69C3 /* NSObject+WHRuntime.m in Sources */,
+				0D00BF15E5146D7F56405AD845851C49 /* NSString+WHString.m in Sources */,
+				1FEE17BA8D1BAEC89FCFB74B9B6F38E4 /* NSTimer+WHTimer.m in Sources */,
+				A4DD8088D43381B47F12415C4AC34557 /* UIAlertController+WHAlert.m in Sources */,
+				6DCBFB4D4E59497F6BCEC27AE32C05DD /* UIBarButtonItem+WHBarButtonItem.m in Sources */,
+				AB141F2D3E6AAEB085DAC31C03D0546F /* UIButton+WHButton.m in Sources */,
+				BD29DC779AA487C39BEE75AF2C8A2A28 /* UIColor+WHColor.m in Sources */,
+				8A1D64D419E81974BCB97572980A8E6B /* UIDevice+WHDevice.m in Sources */,
+				C71C73E7D86668C345539B80054B5E1A /* UIImage+WHImage.m in Sources */,
+				54C4FB98A0BFBC33BFDDCDEFDD0C9749 /* UINavigationController+WHNavigationController.m in Sources */,
+				56EAB61AC90E316DD5F898801DE9D555 /* UIScrollView+WHScrollView.m in Sources */,
+				52DE50F56819A7A8C410AF88429D6362 /* UITableView+WHTableView.m in Sources */,
+				101508075FB619AE42BD7553F057DD47 /* UIView+WHDraw.m in Sources */,
+				569F71EE188D4A2C85080F102CD20DF6 /* UIView+WHView.m in Sources */,
+				29E59BD5C12615E6E1DEA8D09800E8D5 /* UIViewController+WHVC.m in Sources */,
+				5358E5E2582E1F8D3EBE8FE965244E77 /* WHKit-dummy.m in Sources */,
+				8BB2172CECE2446F79953603B75E1CFF /* WHMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7A39214AE1F6B28981B2176003ED297 /* Sources */ = {
+		D93189C704792595BEBA3C735D330544 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8772A71D488547D20ADD22B2DA6BFF1A /* Pods-WHKitDemo-dummy.m in Sources */,
+				CB6CF5265ED5E31D9076898CB01EDAEA /* Pods-WHKitDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		286EC2E8FFBD06869DF37AF6F47276AB /* PBXTargetDependency */ = {
+		95841177B6522597F2344C58A9A6CACD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WHKit;
 			target = 54B2CEE4C80D3CF054B0F3ECA55CEBD9 /* WHKit */;
-			targetProxy = 58D1564A0A46CA15B96518391B8C9173 /* PBXContainerItemProxy */;
+			targetProxy = 1252EA5385A01D54E5AD744BD5689CDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -648,114 +650,7 @@
 			};
 			name = Release;
 		};
-		7023D14F29E00E60A59F35D3E8D1D7A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E80C3E85D8484BF8A41BCBE5EF2C590 /* Pods-WHKitDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WHKitDemo/Pods-WHKitDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WHKitDemo/Pods-WHKitDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AF97FF5143475F123873836484FD63D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 481B497707DE434C3936FB2B7DB4A075 /* WHKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WHKit/WHKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WHKit/WHKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WHKit/WHKit.modulemap";
-				PRODUCT_MODULE_NAME = WHKit;
-				PRODUCT_NAME = WHKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9CBBD0643FDA783CBAC14EC841D07C42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FEB00D9A55B8DA4BF98C59180AE5BAB /* WHKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WHKit/WHKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WHKit/WHKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WHKit/WHKit.modulemap";
-				PRODUCT_MODULE_NAME = WHKit;
-				PRODUCT_NAME = WHKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D5C299C89DE6FABD11036CDDF946C49B /* Debug */ = {
+		3926A45BDA8223BFA3F709876323575D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C7E54BF4CB4A527F6031897F791B928 /* Pods-WHKitDemo.debug.xcconfig */;
 			buildSettings = {
@@ -769,6 +664,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-WHKitDemo/Pods-WHKitDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -792,14 +689,131 @@
 			};
 			name = Debug;
 		};
+		52ED5434FDE36A1B6FDA8BB3644CBF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FEB00D9A55B8DA4BF98C59180AE5BAB /* WHKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/WHKit/WHKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/WHKit/WHKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WHKit/WHKit.modulemap";
+				PRODUCT_MODULE_NAME = WHKit;
+				PRODUCT_NAME = WHKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81815EFA3C1577A58E2C977FC90333EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E80C3E85D8484BF8A41BCBE5EF2C590 /* Pods-WHKitDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-WHKitDemo/Pods-WHKitDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WHKitDemo/Pods-WHKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECFA8364B2522476225DD39DEFB85068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481B497707DE434C3936FB2B7DB4A075 /* WHKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/WHKit/WHKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/WHKit/WHKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WHKit/WHKit.modulemap";
+				PRODUCT_MODULE_NAME = WHKit;
+				PRODUCT_NAME = WHKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33C9F8CEC9A7F2ADC08F156D80C2891F /* Build configuration list for PBXNativeTarget "WHKit" */ = {
+		3709ED22595E23A11DA971A2C7E74DF9 /* Build configuration list for PBXNativeTarget "Pods-WHKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AF97FF5143475F123873836484FD63D /* Debug */,
-				9CBBD0643FDA783CBAC14EC841D07C42 /* Release */,
+				3926A45BDA8223BFA3F709876323575D /* Debug */,
+				81815EFA3C1577A58E2C977FC90333EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -813,11 +827,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC70570D7115644479C955DDF14C1748 /* Build configuration list for PBXNativeTarget "Pods-WHKitDemo" */ = {
+		DBFE1A6BF07AFC9330434950F743E06E /* Build configuration list for PBXNativeTarget "WHKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5C299C89DE6FABD11036CDDF946C49B /* Debug */,
-				7023D14F29E00E60A59F35D3E8D1D7A9 /* Release */,
+				ECFA8364B2522476225DD39DEFB85068 /* Debug */,
+				52ED5434FDE36A1B6FDA8BB3644CBF8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

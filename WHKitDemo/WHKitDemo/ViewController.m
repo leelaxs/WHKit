@@ -16,6 +16,7 @@
 
     // 本月的第一天距离现在多久
     NSLog(@"%@",[[NSDate begindayOfMonth:[NSDate new]] timeInfo]);
+    NSLog(@"hhhhhhhhh===%@",@(wh_navigationBarHeight()));
     [UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)];
     NSLog(@"%@====%@",@(kTopHeight),@([UIApplication.sharedApplication.delegate respondsToSelector:@selector(setWindow:)]));
     UIInterfaceOrientation orientation = wh_currentWindow().windowScene.interfaceOrientation;

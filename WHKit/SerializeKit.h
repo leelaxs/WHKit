@@ -10,7 +10,6 @@
 \
 - (id)initWithCoder:(NSCoder *)coder    \
 {   \
-NSLog(@"%s",__func__);  \
 Class cls = [self class];   \
 while (cls != [NSObject class]) {   \
 \
@@ -40,7 +39,6 @@ return self;    \
 \
 - (void)encodeWithCoder:(NSCoder *)coder    \
 {   \
-NSLog(@"%s",__func__);  \
 Class cls = [self class];   \
 while (cls != [NSObject class]) {   \
 \
@@ -74,7 +72,6 @@ cls = class_getSuperclass(cls); \
   \
 - (id)copyWithZone:(NSZone *)zone   \
 {   \
-NSLog(@"%s",__func__);  \
 id copy = [[[self class] allocWithZone:zone] init];    \
 Class cls = [self class];   \
 while (cls != [NSObject class]) {  \

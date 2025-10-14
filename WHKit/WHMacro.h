@@ -58,6 +58,33 @@ static inline CGFloat wh_statusBarHeight(void) {
     return statusBarHeight;
 }
 
+/// 获取系统当前默认导航栏高度（非总高度，不含状态栏）
+static inline CGFloat wh_navigationBarHeight(void) {
+    static CGFloat cachedHeight = 0;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        CGFloat height = 0;
+        if (@available(iOS 26.0, *)) {
+            // iOS26: UINavigationBar 内部布局已变，用 layoutFittingCompressedSize 更稳
+            UINavigationBar *navBar = [[UINavigationBar alloc] init];
+            navBar.translatesAutoresizingMaskIntoConstraints = NO;
+            height = [navBar systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+            // 如果系统返回异常值（0 或 < 40），兜底
+            if (height < 40.0) height = 54.0; // iOS26 多数设备为 54pt 左右
+        } else if (@available(iOS 15.0, *)) {
+            // iOS15+：可用 sizeThatFits
+            UINavigationBar *navBar = [[UINavigationBar alloc] init];
+            CGSize naviSize = [navBar sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width, CGFLOAT_MAX)];
+            height = naviSize.height > 0 ? naviSize.height : 44.0;
+        } else {
+            // 老系统
+            height = 44.0;
+        }
+        cachedHeight = height;
+    });
+    return cachedHeight;
+}
+
 /// 替换系统NSLog
 //#ifdef DEBUG
 //#define NSLog(...) NSLog(@"%s 第%d行: %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
@@ -116,15 +143,15 @@ static inline CGFloat wh_statusBarHeight(void) {
 ///状态栏高度
 #define kStatusBarHeight (wh_statusBarHeight())
 /// 导航栏高度
-#define kNavBarHeight 44.0
+#define kNavBarHeight (wh_navigationBarHeight())
 /// 状态栏加导航栏高度
 #define kTopHeight (kStatusBarHeight+kNavBarHeight)
 /// TabBar高度
 #define kTabBarHeight (kIs_iPhoneX ? 83 : 49)
 /// 底部安全区域远离高度
-#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX ? 34.0 : 0)
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX ? wh_safeAreaInsets().bottom : 0)
 ///状态栏真实高度
-#define kStatusBarRealHeight (kIs_iPhoneX ? 44.0 : 20.0)
+#define kStatusBarRealHeight (kIs_iPhoneX ? kNavBarHeight : 20.0)
 
 /// Aplication
 #define kApplication [UIApplication sharedApplication]
