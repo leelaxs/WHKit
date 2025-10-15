@@ -138,7 +138,7 @@ static inline CGFloat wh_navigationBarHeight(void) {
 /// 导航栏高度
 #define kNavBarHeight (wh_navigationBarHeight())
 /// 状态栏加导航栏高度
-#define kTopHeight (kStatusBarHeight+kNavBarHeight)
+#define kNaviFullHeight (kStatusBarHeight+kNavBarHeight)
 /// TabBar高度
 #define kTabBarHeight (kIs_iPhoneX ? 83 : 49)
 /// 底部安全区域远离高度
